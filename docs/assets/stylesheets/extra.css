@@ -1,0 +1,79 @@
+/* keypress animation */
+kbd {
+  cursor: pointer;
+}
+kbd:active {
+  position: relative;
+  top: 2px;
+  border-bottom: 2px;
+}
+
+/* Header Logo */
+.md-logo img {
+  height: 25px;
+  width: 205px;
+}
+
+/* Active Tab */
+.md-tabs__link--active {
+  color: #FF1D4B
+}
+
+/* Discord Invite */
+.discordInvite {
+  width: auto;
+  max-width: 500px;
+  min-width: 320px;
+  height: auto;
+  background-color: #FAFAFB;
+  border: 1.5px solid #C5C7CA;
+  border-radius: 3px;
+  padding: 10px 15px;
+  font-size: 0.8em;
+}
+.di-title {
+  color: #555555;
+  text-transform: uppercase;
+}
+.di-icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 10px 5px 0px;
+  border-radius: 20px;
+  background-image: url('/assets/images/logo.png');
+  background-size: cover;
+  /* background-color: #555555; */
+  color: #F5F5F5;
+  text-align: center;
+  line-height: 60px;
+}
+.di-content {
+  display: inline-block;
+  transform: translateY(-35%);
+}
+.di-content__title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #808080;
+}
+.di-content__meta {
+  color: #72767D;
+}
+.di-button {
+  float: right;
+  width: 80px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: #43B581;
+  color: #F5F5F5;
+  transform: translateY(75%);
+  text-align: center;
+  line-height: 40px;
+}
+.di-button.disabled {
+  background-color: grey
+}
+.di-button:hover {
+  filter: contrast(150%);
+}
