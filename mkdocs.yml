@@ -1,0 +1,68 @@
+# Project information
+site_name: ''
+site_description: 'Welcome to the Pokémon Developers for Pokédex API.'
+site_url: 'https://pokedevs.github.io/pokedex-api-docs'
+site_author: 'Sankarsan Kampa'
+
+# Repository
+repo_name: 'pokedex-api-docs'
+repo_url: 'https://github.com/PokeDevs/pokedex-api-docs'
+edit_uri: edit/master/docs/
+
+# Copyright
+copyright: 'Copyright &copy; 2017 - Sankarsan Kampa'
+
+# Configuration
+theme:
+  name: 'material'
+  custom_dir: 'theme'
+  feature:
+    tabs: true
+  palette:
+    primary: 'white'
+    accent: 'red'
+  language: 'en'
+  font:
+    text: 'Scope One'
+    code: 'Source Code Pro'
+  favicon: 'favicon.png'
+  logo: 'assets/images/pokedevs.png'
+
+extra_css:
+  - 'assets/stylesheets/extra.css'
+
+# Options
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/PokeDevs'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - footnotes
+  - meta
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
+  - toc:
+      permalink: '#'
+  - smarty
+
+# Pages
+pages:
+  - Pokédex API:
+    - Intro: 'index.md'
+
+# Development
+dev_addr: '0.0.0.0:201'
