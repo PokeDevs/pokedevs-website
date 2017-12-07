@@ -63,6 +63,8 @@ markdown_extensions:
 pages:
   - Pokédex API:
     - Intro: 'index.md'
+  - Information:
+    - About: 'about.md'
 
 # Development
 dev_addr: '0.0.0.0:201'
