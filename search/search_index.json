@@ -9,6 +9,31 @@
             "location": "/#introduction", 
             "text": "Welcome to the Pok\u00e9dex API Documentation Site.  The entire Pok\u00e9dex data in one place and easily accessible through RESTful API.\nWe ve covered every Pok\u00e9mon and we will always try to keep this up-to-date.  Here you ll find documentation on how to use our Pok\u00e9dex API and any other\ninformation regarding the same.  All of our  documentation is available on GitHub \nand we would   corrections and improvements!   Come join our  official Discord server \nif you wanna hang out with other developers and see what they are crafting\nout of out API.  We look forward to see you make awesome apps using our API.  \n   \n     You re not yet invited \n     \n     \n       Pok\u00e9mon Developers \n       Gotta catch  em all! \n     \n     Join", 
             "title": "Introduction"
+        }, 
+        {
+            "location": "/about/", 
+            "text": "Why did I start this? \nAren\nt there already tons of other APIs?\n#\n\n\nYeah, exactly, there are 100s of other Pok\u00e9mon APIs out there. But they are all\nout dated. That\ns exactly why I started working on this project. I needed a\nPok\u00e9mon API to integrate it with my Discord Bot (\nBastion\n).\nSo I started looking for different sources for a reliable and updated Pok\u00e9mon\nAPI.\n\nI found very reliable and up-to-date sites like \nPok\u00e9mon Database\n\nand \nBulbapedia\n, but they didn\nt had any\npublic facing APIs, that was the first bump. And the sites I found that provided\nan API were not up-to-date. At the time of writing, a complete generation,\ngeneration 7 (Sun \n Moon) to be exact, was missing after months of its release\nin the TV. It was clear that I couldn\nt rely on them for updated Pok\u00e9mon data.\nSo, I thought of writing my own API and keeping it updated as soon as new\nPok\u00e9mon are released.\n\n\nHow did I did this?\n#\n\n\nIt took around a week to manually enter all the Pok\u00e9dex data into a dataset.\nThen I designed \n developed the RESTful API server, tested it and wrote the\ndocumentation. And here we are, with the \nPok\u00e9dex API\n of the \nPok\u00e9mon\nDevelopers\n project.\n\n\nWhat\ns the final product?\n#\n\n\nThe \nPok\u00e9dex API\n is a RESTful API interface to a lot of data about Pok\u00e9mon\nand related stuff that you can consume. We specifically cover the \nPok\u00e9mon anime series\n\nof the \nPok\u00e9mon franchise\n.\nAnd we\nd love to cover the video game and the Pok\u00e9mon Go game in the future.\n\nAnd this website provides you with the documentation on how to use our API so\nthat you can make awesome apps or websites that need Pok\u00e9mon data. You can get\ninformation on all the Pok\u00e9mon that exist in the Pok\u00e9mon World, leagues,\nevolutionary stones and egg groups and a lot more (and a LOT LOT more in the\nfuture).\n\n\nBut wait, who am I?\n#\n\n\nSo, the answer to the final question, I\nm \nSankarsan Kampa\n,\n\na.k.a. k3rn31p4nic\n. You can find me on GitHub \n@k3rn31p4nic\n,\non Twitter \n@k3rn31p4nic\n or on Discord as\n\nk3rn31p4nic#8383\n in any of my Discord Servers, \nBastion\n\nor \nPok\u00e9mon Developers\n.", 
+            "title": "About"
+        }, 
+        {
+            "location": "/about/#why-did-i-start-this-arent-there-already-tons-of-other-apis", 
+            "text": "Yeah, exactly, there are 100s of other Pok\u00e9mon APIs out there. But they are all\nout dated. That s exactly why I started working on this project. I needed a\nPok\u00e9mon API to integrate it with my Discord Bot ( Bastion ).\nSo I started looking for different sources for a reliable and updated Pok\u00e9mon\nAPI. \nI found very reliable and up-to-date sites like  Pok\u00e9mon Database \nand  Bulbapedia , but they didn t had any\npublic facing APIs, that was the first bump. And the sites I found that provided\nan API were not up-to-date. At the time of writing, a complete generation,\ngeneration 7 (Sun   Moon) to be exact, was missing after months of its release\nin the TV. It was clear that I couldn t rely on them for updated Pok\u00e9mon data.\nSo, I thought of writing my own API and keeping it updated as soon as new\nPok\u00e9mon are released.", 
+            "title": "Why did I start this? Aren't there already tons of other APIs?"
+        }, 
+        {
+            "location": "/about/#how-did-i-did-this", 
+            "text": "It took around a week to manually enter all the Pok\u00e9dex data into a dataset.\nThen I designed   developed the RESTful API server, tested it and wrote the\ndocumentation. And here we are, with the  Pok\u00e9dex API  of the  Pok\u00e9mon\nDevelopers  project.", 
+            "title": "How did I did this?"
+        }, 
+        {
+            "location": "/about/#whats-the-final-product", 
+            "text": "The  Pok\u00e9dex API  is a RESTful API interface to a lot of data about Pok\u00e9mon\nand related stuff that you can consume. We specifically cover the  Pok\u00e9mon anime series \nof the  Pok\u00e9mon franchise .\nAnd we d love to cover the video game and the Pok\u00e9mon Go game in the future. \nAnd this website provides you with the documentation on how to use our API so\nthat you can make awesome apps or websites that need Pok\u00e9mon data. You can get\ninformation on all the Pok\u00e9mon that exist in the Pok\u00e9mon World, leagues,\nevolutionary stones and egg groups and a lot more (and a LOT LOT more in the\nfuture).", 
+            "title": "What's the final product?"
+        }, 
+        {
+            "location": "/about/#but-wait-who-am-i", 
+            "text": "So, the answer to the final question, I m  Sankarsan Kampa , a.k.a. k3rn31p4nic . You can find me on GitHub  @k3rn31p4nic ,\non Twitter  @k3rn31p4nic  or on Discord as k3rn31p4nic#8383  in any of my Discord Servers,  Bastion \nor  Pok\u00e9mon Developers .", 
+            "title": "But wait, who am I?"
         }
     ]
 }
