@@ -1,4 +1,5 @@
 title: Intro - Pokédex API - Pokémon Developers
+description: Welcome to the Pokédex API documentation page. Read and get started with developing amazing Pokémon apps.
 
 # Introduction
 Welcome to the Pokédex API Documentation Site.
