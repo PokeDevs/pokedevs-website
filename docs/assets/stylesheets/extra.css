@@ -8,6 +8,26 @@ kbd:active {
   border-bottom: 2px;
 }
 
+table caption {
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  text-align: left;
+  background-color: #757575;
+  padding: 10px;
+  color: white;
+}
+.md-typeset__table table {
+  box-shadow: none !important;
+  border: 1px solid #DDDDDD;
+  border-radius: 0px !important;
+}
+.md-typeset__table table tr:nth-child(odd) {
+  background-color: #F6F6F6;
+}
+.md-typeset__table table tr:nth-child(even) {
+  background-color: #EDEDED;
+}
+
 /* Header Logo */
 .md-logo img {
   height: 25px;
