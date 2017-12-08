@@ -1,12 +1,12 @@
 # Project information
 site_name: ''
 site_description: 'Welcome to the Pokémon Developers project. We develop some amazing Pokémon stuff.'
-site_url: 'https://pokedevs.github.io'
+site_url: 'https://pokedevs.github.io/pokedevs-website'
 site_author: 'Sankarsan Kampa'
 
 # Repository
-repo_name: 'pokedevs.github.io'
-repo_url: 'https://github.com/PokeDevs/pokedevs.github.io'
+repo_name: 'pokedevs-website'
+repo_url: 'https://github.com/PokeDevs/pokedevs-website'
 edit_uri: edit/master/docs/
 
 # Copyright

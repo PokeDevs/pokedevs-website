@@ -10,7 +10,7 @@ We've covered every Pokémon and we will always try to keep this up-to-date.
 Here you'll find documentation on how to use our Pokédex API and any other
 information regarding the same.
 
-All of our [documentation is available on GitHub](https://github.com/PokeDevs/pokedex-api-docs)
+All of our [documentation is available on GitHub](https://github.com/PokeDevs/pokedevs-website)
 and we would :heart: corrections and improvements!
 
 <hr>
