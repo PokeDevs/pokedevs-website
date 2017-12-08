@@ -1,12 +1,12 @@
 # Project information
 site_name: ''
 site_description: 'Welcome to the Pokémon Developers project. We develop some amazing Pokémon stuff.'
-site_url: 'https://pokedevs.github.io/pokedex-api-docs'
+site_url: 'https://pokedevs.github.io'
 site_author: 'Sankarsan Kampa'
 
 # Repository
-repo_name: 'pokedex-api-docs'
-repo_url: 'https://github.com/PokeDevs/pokedex-api-docs'
+repo_name: 'pokedevs.github.io'
+repo_url: 'https://github.com/PokeDevs/pokedevs.github.io'
 edit_uri: edit/master/docs/
 
 # Copyright
