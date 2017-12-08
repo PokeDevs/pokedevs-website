@@ -17,7 +17,7 @@ and we would :heart: corrections and improvements!
 
 Come join our [official Discord server](# 'Pokémon Developers')
 if you wanna hang out with other developers and see what they are crafting
-out of out API.
+out of the API.
 
 We look forward to see you make awesome apps using our API.
 
