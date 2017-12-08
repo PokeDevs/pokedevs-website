@@ -597,13 +597,17 @@ resource.</p>
 the rate limit encountered during your request.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>X-RateLimit-Limit: 500
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Retry-After: 1301000
+X-RateLimit-Limit: 500
 X-RateLimit-Remaining: 201
 X-RateLimit-Reset: 905212800000
 </pre></div>
 </td></tr></table>
 
 <ul>
+<li>Retry-After - The number of milliseconds after which the rate limit will
+    reset. It is returned only if you&rsquo;ve been rate limited.</li>
 <li>X-RateLimit-Limit - The number of requests that can be made</li>
 <li>X-RateLimit-Remaining - The number of remaining requests that can be made</li>
 <li>X-RateLimit-Reset - Epoch time (seconds since 00:00:00 UTC on January 1,
@@ -661,7 +665,7 @@ IP address) from using the API again.</p>
 10
 11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&lt; HTTP/1.1 429 TOO MANY REQUESTS
 &lt; Content-Type: application/json
-&lt; Retry-After: 1000
+&lt; Retry-After: 14400000
 &lt; X-RateLimit-Limit: 500
 &lt; X-RateLimit-Remaining: 0
 &lt; X-RateLimit-Reset: 905212800000
