@@ -92,11 +92,14 @@ For every API request made, we return optional HTTP response headers containing
 the rate limit encountered during your request.
 
 ```
+Retry-After: 1301000
 X-RateLimit-Limit: 500
 X-RateLimit-Remaining: 201
 X-RateLimit-Reset: 905212800000
 ```
 
+*   Retry-After - The number of milliseconds after which the rate limit will
+    reset. It is returned only if you've been rate limited.
 *   X-RateLimit-Limit - The number of requests that can be made
 *   X-RateLimit-Remaining - The number of remaining requests that can be made
 *   X-RateLimit-Reset - Epoch time (seconds since 00:00:00 UTC on January 1,
@@ -147,7 +150,7 @@ The rate-limiting response will look something like the following:
 ```
 < HTTP/1.1 429 TOO MANY REQUESTS
 < Content-Type: application/json
-< Retry-After: 1000
+< Retry-After: 14400000
 < X-RateLimit-Limit: 500
 < X-RateLimit-Remaining: 0
 < X-RateLimit-Reset: 905212800000
