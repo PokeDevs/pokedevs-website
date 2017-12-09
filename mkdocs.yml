@@ -64,6 +64,7 @@ pages:
   - Pokédex API:
     - Intro: 'index.md'
     - Reference: 'reference.md'
+    - Usage Notes: 'usage_notes.md'
   - Information:
     - About: 'about.md'
 
