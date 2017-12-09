@@ -71,6 +71,26 @@
             "title": "Usage Notes"
         }, 
         {
+            "location": "/libraries/", 
+            "text": "API Wrapper Libraries\n#\n\n\nUse any available API wrapper library for your programming language to save your\ntime and focus on what really matters - your application or website.\n\n\nOfficial Libraries\n#\n\n\nHere\ns a list of nifty libraries made by us that you can use for your project.\n\n\n\n\nNo official libraries are available yet. Check back soon.\n\n\n\n\nThird-Party Libraries\n#\n\n\nHere\ns a list of amazing libraries made by us made by brilliant developers\naround the world that you can use for your project.\n\n\n\n\nNo third-party libraries are available yet. Check back soon.  \n\n\n\n\n\n\nInfo\n\n\nIf you are a developer and have made any wrapper library that can be used by\nanyone to power their application or website, we\nd love to showcase your\nlibrary here.\n\n\nMore details on how to do that, what perks you will receive and etc. will\nbe available when this website is released.", 
+            "title": "Libraries"
+        }, 
+        {
+            "location": "/libraries/#api-wrapper-libraries", 
+            "text": "Use any available API wrapper library for your programming language to save your\ntime and focus on what really matters - your application or website.", 
+            "title": "API Wrapper Libraries"
+        }, 
+        {
+            "location": "/libraries/#official-libraries", 
+            "text": "Here s a list of nifty libraries made by us that you can use for your project.   No official libraries are available yet. Check back soon.", 
+            "title": "Official Libraries"
+        }, 
+        {
+            "location": "/libraries/#third-party-libraries", 
+            "text": "Here s a list of amazing libraries made by us made by brilliant developers\naround the world that you can use for your project.   No third-party libraries are available yet. Check back soon.      Info  If you are a developer and have made any wrapper library that can be used by\nanyone to power their application or website, we d love to showcase your\nlibrary here.  More details on how to do that, what perks you will receive and etc. will\nbe available when this website is released.", 
+            "title": "Third-Party Libraries"
+        }, 
+        {
             "location": "/about/", 
             "text": "Why did I start this? \nAren\nt there already tons of other APIs?\n#\n\n\nYeah, exactly, there are 100s of other Pok\u00e9mon APIs out there. But they are all\nout dated. That\ns exactly why I started working on this project. I needed a\nPok\u00e9mon API to integrate it with my Discord Bot (\nBastion\n).\nSo I started looking for different sources for a reliable and updated Pok\u00e9mon\nAPI.\n\nI found very reliable and up-to-date sites like \nPok\u00e9mon Database\n\nand \nBulbapedia\n, but they didn\nt had any\npublic facing APIs, that was the first bump. And the sites I found that provided\nan API were not up-to-date. At the time of writing, a complete generation,\ngeneration 7 (Sun \n Moon) to be exact, was missing after months of its release\nin the TV. It was clear that I couldn\nt rely on them for updated Pok\u00e9mon data.\nSo, I thought of writing my own API and keeping it updated as soon as new\nPok\u00e9mon are released.\n\n\nHow did I did this?\n#\n\n\nIt took around a week to manually enter all the Pok\u00e9dex data into a dataset.\nThen I designed \n developed the RESTful API server, tested it and wrote the\ndocumentation. And here we are, with the \nPok\u00e9dex API\n of the \nPok\u00e9mon\nDevelopers\n project.\n\n\nWhat\ns the final product?\n#\n\n\nThe \nPok\u00e9dex API\n is a RESTful API interface to a lot of data about Pok\u00e9mon\nand related stuff that you can consume. We specifically cover the \nPok\u00e9mon anime series\n\nof the \nPok\u00e9mon franchise\n.\nAnd we\nd love to cover the video game and the Pok\u00e9mon Go game in the future.\n\nAnd this website provides you with the documentation on how to use our API so\nthat you can make awesome apps or websites that need Pok\u00e9mon data. You can get\ninformation on all the Pok\u00e9mon that exist in the Pok\u00e9mon World, leagues,\nevolutionary stones and egg groups and a lot more (and a LOT LOT more in the\nfuture).\n\n\nBut wait, who am I?\n#\n\n\nSo, the answer to the final question, I\nm \nSankarsan Kampa\n,\n\na.k.a. k3rn31p4nic\n. You can find me on GitHub \n@k3rn31p4nic\n,\non Twitter \n@k3rn31p4nic\n or on Discord as\n\nk3rn31p4nic#8383\n in any of my Discord Servers, \nBastion\n\nor \nPok\u00e9mon Developers\n.", 
             "title": "About"

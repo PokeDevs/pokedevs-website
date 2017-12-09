@@ -21,6 +21,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>https://pokedevs.github.io/pokedevs-website/libraries/</loc>
+     <lastmod>2017-12-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
