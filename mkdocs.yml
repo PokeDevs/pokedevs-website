@@ -65,6 +65,7 @@ pages:
     - Intro: 'index.md'
     - Reference: 'reference.md'
     - Usage Notes: 'usage_notes.md'
+    - Libraries: 'libraries.md'
   - Information:
     - About: 'about.md'
 
