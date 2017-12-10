@@ -66,6 +66,8 @@ pages:
     - Reference: 'reference.md'
     - Usage Notes: 'usage_notes.md'
     - Libraries: 'libraries.md'
+    - Resources:
+      - Categories: 'resources/categories.md'
   - Information:
     - About: 'about.md'
 
