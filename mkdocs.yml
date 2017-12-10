@@ -69,6 +69,7 @@ pages:
     - Resources:
       - Categories: 'resources/categories.md'
       - Egg Groups: 'resources/egg-groups.md'
+      - Evolution Stones: 'resources/evolution-stones.md'
       - Types: 'resources/types.md'
   - Information:
     - About: 'about.md'
