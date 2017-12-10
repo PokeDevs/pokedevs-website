@@ -68,6 +68,7 @@ pages:
     - Libraries: 'libraries.md'
     - Resources:
       - Categories: 'resources/categories.md'
+      - Egg Groups: 'resources/egg-groups.md'
   - Information:
     - About: 'about.md'
 
