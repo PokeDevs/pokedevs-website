@@ -104,3 +104,24 @@ table caption {
 .di-button:hover {
   filter: contrast(150%);
 }
+
+/* HTTP Methods */
+span.resource {
+  display: block;
+  width: 100%;
+  border-radius: 5px 0px 0px 5px;
+  background-color: #F6F6F6;
+  font-family: 'Source Code Pro', monospace;
+  /*font-size: 120%;*/
+  color: #616161;
+}
+span.resource .get {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #E8F5E9;
+  /*color: #EDEDED;*/
+  /*background-color: #EDEDED;
+  color: #4CAF50;*/
+  /*font-weight: 7*/
+}
