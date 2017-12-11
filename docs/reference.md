@@ -9,14 +9,14 @@ need.
 ## Base URL
 The base URL for all API requests is:
 ```URL
-https://api.pokedevs.bastionbot.org
+https://pokeapi.bastionbot.org
 ```
 
 ## API Versioning
 Pokédex API exposes different versions of the API. You can specify version by
 including it in the request path:
 ```URL
-https://api.pokedevs.bastionbot.org/v{version_number}
+https://pokeapi.bastionbot.org/v{version_number}
 ```
 
 Omitting the version number from the route will route requests to the current
