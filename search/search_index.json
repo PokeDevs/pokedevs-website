@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/reference/", 
-            "text": "API Reference\n#\n\n\nPok\u00e9dex API is based on a single layer, a HTTPS/REST consumption-only API that\nonly allows the \nGET\n method to consume all the Pok\u00e9mon information you\nll ever\nneed.\n\n\nBase URL\n#\n\n\nThe base URL for all API requests is:\n\n\n1\nhttps://api.pokedevs.bastionbot.org\n\n\n\n\n\n\nAPI Versioning\n#\n\n\nPok\u00e9dex API exposes different versions of the API. You can specify version by\nincluding it in the request path:\n\n\n1\nhttps://api.pokedevs.bastionbot.org/v{version_number}\n\n\n\n\n\n\nOmitting the version number from the route will route requests to the current\ndefault version. We recommend specifying a version number in the request path\nso that your app doesn\nt run into incompatibility when the default version is\nchanged.\n\n\n\n  \nAPI Versions\n\n  \n\n    \n\n      \nVersion\n\n      \nStatus\n\n      \nDefault\n\n    \n\n  \n\n  \n\n    \n\n      \n1\n\n      \nAvailable\n\n      \n\u2713\n\n    \n\n  \n\n\n\n\n\nAuthentication\n#\n\n\nNo authentication is required to access this API. All the resources are and\navailable to everyone. However, we will implement authentication methods in the\nfuture that will give authenticated users higher \nrate limits\n\nor no \nrate limits\n at all (more on \nrate limits\n\nlater).\n\n\nUser Agent\n#\n\n\nApplications and websites using the API must provide a valid \nUser Agent\n\nwhich specifies information about the app and website, in the following format:\n\n\n1\nUser-Agent: AppName ($url, $version)\n\n\n\n\n\n\nApplications and websites may append more information and metadata to the end of\nthis string as they wish.\n\n\nExample User Agent Header\n#\n\n\n1\nUser-Agent: BastionDiscordBot (https://bastionbot.org, 6.3.0)\n\n\n\n\n\n\nRate Limiting\n#\n\n\nThis API implements a process for limiting and preventing excessive requests in\naccordance with \nRFC 6585\n.\n\n\nThis API rate limits requests in order to prevent abuse and overload of our\nservices. Rate limits are applied on a global basis, spanning across the entire\nAPI.\n\n\nBecause we may change rate limits at any time and rate limits can be\ndifferent per application, rate limits should not be hard coded into your\napplication or website. In order to properly support our dynamic rate\nlimits, your application or website should parse for our rate limits in\nresponse headers and locally prevent exceeding of the limits as they change.\n\n\n\n\nInfo\n\n\nCurrent rate limit is 500 API calls in 12 hours. And we will increase the\nrate limits every time we upgrade our server for better performance.\n\n\n\n\nWe recommend that your application or website should locally cache the\ndata that you receive to save the number of API calls consumed for the same\nresource.\n\n\nHeader Format\n#\n\n\nFor every API request made, we return optional HTTP response headers containing\nthe rate limit encountered during your request.\n\n\n1\n2\n3\n4\nRetry-After: 1301000\nX-RateLimit-Limit: 500\nX-RateLimit-Remaining: 201\nX-RateLimit-Reset: 905212800000\n\n\n\n\n\n\n\n\nRetry-After - The number of milliseconds after which the rate limit will\n    reset. It is returned only if you\nve been rate limited.\n\n\nX-RateLimit-Limit - The number of requests that can be made\n\n\nX-RateLimit-Remaining - The number of remaining requests that can be made\n\n\nX-RateLimit-Reset - Epoch time (seconds since 00:00:00 UTC on January 1,\n    1970) at which the rate limit resets. It is returned only if you\nve been\n    rate limited.\n\n\n\n\nExceeding A Rate Limit\n#\n\n\nIn the case that a rate limit is exceeded, the API will return a HTTP 429\nresponse code with a JSON body.\n\n\n\n  \nRate Limit Response Structure\n\n  \n\n    \n\n      \nField\n\n      \nType\n\n      \nDescription\n\n    \n\n  \n\n  \n\n    \n\n      \nerror\n\n      \ninteger\n\n      \nThe HTTP response code.\n\n    \n\n    \n\n      \nmessage\n\n      \nstring\n\n      \nA message saying you are being rate limited.\n\n    \n\n    \n\n      \nretry_after\n\n      \ninteger\n\n      \nThe number of milliseconds to wait before submitting another request.\n\n    \n\n  \n\n\n\n\n\nNote that the normal rate-limiting headers will be sent in this response.\n\n\n\n\nWarning\n\n\nAPI users that regularly hit and ignore rate limits will be banned (by their\nIP address) from using the API again.\n\n\n\n\nExample Rate Limit Response\n#\n\n\nThe rate-limiting response will look something like the following:\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n HTTP/1.1 429 TOO MANY REQUESTS\n\n Content-Type: application/json\n\n Retry-After: 14400000\n\n X-RateLimit-Limit: 500\n\n X-RateLimit-Remaining: 0\n\n X-RateLimit-Reset: 905212800000\n{\n  \nerror\n: 429,\n  \nmessage\n: \nYou are being rate limited.\n,\n  \nretry_after\n: 14400000\n}", 
+            "text": "API Reference\n#\n\n\nPok\u00e9dex API is based on a single layer, a HTTPS/REST consumption-only API that\nonly allows the \nGET\n method to consume all the Pok\u00e9mon information you\nll ever\nneed.\n\n\nBase URL\n#\n\n\nThe base URL for all API requests is:\n\n\n1\nhttps://pokeapi.bastionbot.org\n\n\n\n\n\n\nAPI Versioning\n#\n\n\nPok\u00e9dex API exposes different versions of the API. You can specify version by\nincluding it in the request path:\n\n\n1\nhttps://pokeapi.bastionbot.org/v{version_number}\n\n\n\n\n\n\nOmitting the version number from the route will route requests to the current\ndefault version. We recommend specifying a version number in the request path\nso that your app doesn\nt run into incompatibility when the default version is\nchanged.\n\n\n\n  \nAPI Versions\n\n  \n\n    \n\n      \nVersion\n\n      \nStatus\n\n      \nDefault\n\n    \n\n  \n\n  \n\n    \n\n      \n1\n\n      \nAvailable\n\n      \n\u2713\n\n    \n\n  \n\n\n\n\n\nAuthentication\n#\n\n\nNo authentication is required to access this API. All the resources are and\navailable to everyone. However, we will implement authentication methods in the\nfuture that will give authenticated users higher \nrate limits\n\nor no \nrate limits\n at all (more on \nrate limits\n\nlater).\n\n\nUser Agent\n#\n\n\nApplications and websites using the API must provide a valid \nUser Agent\n\nwhich specifies information about the app and website, in the following format:\n\n\n1\nUser-Agent: AppName ($url, $version)\n\n\n\n\n\n\nApplications and websites may append more information and metadata to the end of\nthis string as they wish.\n\n\nExample User Agent Header\n#\n\n\n1\nUser-Agent: BastionDiscordBot (https://bastionbot.org, 6.3.0)\n\n\n\n\n\n\nRate Limiting\n#\n\n\nThis API implements a process for limiting and preventing excessive requests in\naccordance with \nRFC 6585\n.\n\n\nThis API rate limits requests in order to prevent abuse and overload of our\nservices. Rate limits are applied on a global basis, spanning across the entire\nAPI.\n\n\nBecause we may change rate limits at any time and rate limits can be\ndifferent per application, rate limits should not be hard coded into your\napplication or website. In order to properly support our dynamic rate\nlimits, your application or website should parse for our rate limits in\nresponse headers and locally prevent exceeding of the limits as they change.\n\n\n\n\nInfo\n\n\nCurrent rate limit is 500 API calls in 12 hours. And we will increase the\nrate limits every time we upgrade our server for better performance.\n\n\n\n\nWe recommend that your application or website should locally cache the\ndata that you receive to save the number of API calls consumed for the same\nresource.\n\n\nHeader Format\n#\n\n\nFor every API request made, we return optional HTTP response headers containing\nthe rate limit encountered during your request.\n\n\n1\n2\n3\n4\nRetry-After: 1301000\nX-RateLimit-Limit: 500\nX-RateLimit-Remaining: 201\nX-RateLimit-Reset: 905212800000\n\n\n\n\n\n\n\n\nRetry-After - The number of milliseconds after which the rate limit will\n    reset. It is returned only if you\nve been rate limited.\n\n\nX-RateLimit-Limit - The number of requests that can be made\n\n\nX-RateLimit-Remaining - The number of remaining requests that can be made\n\n\nX-RateLimit-Reset - Epoch time (seconds since 00:00:00 UTC on January 1,\n    1970) at which the rate limit resets. It is returned only if you\nve been\n    rate limited.\n\n\n\n\nExceeding A Rate Limit\n#\n\n\nIn the case that a rate limit is exceeded, the API will return a HTTP 429\nresponse code with a JSON body.\n\n\n\n  \nRate Limit Response Structure\n\n  \n\n    \n\n      \nField\n\n      \nType\n\n      \nDescription\n\n    \n\n  \n\n  \n\n    \n\n      \nerror\n\n      \ninteger\n\n      \nThe HTTP response code.\n\n    \n\n    \n\n      \nmessage\n\n      \nstring\n\n      \nA message saying you are being rate limited.\n\n    \n\n    \n\n      \nretry_after\n\n      \ninteger\n\n      \nThe number of milliseconds to wait before submitting another request.\n\n    \n\n  \n\n\n\n\n\nNote that the normal rate-limiting headers will be sent in this response.\n\n\n\n\nWarning\n\n\nAPI users that regularly hit and ignore rate limits will be banned (by their\nIP address) from using the API again.\n\n\n\n\nExample Rate Limit Response\n#\n\n\nThe rate-limiting response will look something like the following:\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n HTTP/1.1 429 TOO MANY REQUESTS\n\n Content-Type: application/json\n\n Retry-After: 14400000\n\n X-RateLimit-Limit: 500\n\n X-RateLimit-Remaining: 0\n\n X-RateLimit-Reset: 905212800000\n{\n  \nerror\n: 429,\n  \nmessage\n: \nYou are being rate limited.\n,\n  \nretry_after\n: 14400000\n}", 
             "title": "Reference"
         }, 
         {
@@ -22,12 +22,12 @@
         }, 
         {
             "location": "/reference/#base-url", 
-            "text": "The base URL for all API requests is:  1 https://api.pokedevs.bastionbot.org", 
+            "text": "The base URL for all API requests is:  1 https://pokeapi.bastionbot.org", 
             "title": "Base URL"
         }, 
         {
             "location": "/reference/#api-versioning", 
-            "text": "Pok\u00e9dex API exposes different versions of the API. You can specify version by\nincluding it in the request path:  1 https://api.pokedevs.bastionbot.org/v{version_number}   Omitting the version number from the route will route requests to the current\ndefault version. We recommend specifying a version number in the request path\nso that your app doesn t run into incompatibility when the default version is\nchanged.  \n   API Versions \n   \n     \n       Version \n       Status \n       Default \n     \n   \n   \n     \n       1 \n       Available \n       \u2713", 
+            "text": "Pok\u00e9dex API exposes different versions of the API. You can specify version by\nincluding it in the request path:  1 https://pokeapi.bastionbot.org/v{version_number}   Omitting the version number from the route will route requests to the current\ndefault version. We recommend specifying a version number in the request path\nso that your app doesn t run into incompatibility when the default version is\nchanged.  \n   API Versions \n   \n     \n       Version \n       Status \n       Default \n     \n   \n   \n     \n       1 \n       Available \n       \u2713", 
             "title": "API Versioning"
         }, 
         {
@@ -89,6 +89,241 @@
             "location": "/libraries/#third-party-libraries", 
             "text": "Here s a list of amazing libraries made by us made by brilliant developers\naround the world that you can use for your project.   No third-party libraries are available yet. Check back soon.      Info  If you are a developer and have made any wrapper library that can be used by\nanyone to power their application or website, we d love to showcase your\nlibrary here.  More details on how to do that, what perks you will receive and etc. will\nbe available when this website is released.", 
             "title": "Third-Party Libraries"
+        }, 
+        {
+            "location": "/resources/pokemon/", 
+            "text": "Pok\u00e9mon Resource\n#\n\n\nGet Pok\u00e9mon \nby Pok\u00e9dex number\n#\n\n\nGET\n /pokemon/\n{number}\n\n\nReturns an array of \nPok\u00e9mon\n objects containing all\nthe forms of the Pok\u00e9mon specified the Pok\u00e9dex number.\n\n\nExample Request\n#\n\n\n1\n2\n3\ncurl -i -X GET -H \n\\\n\n  \nUser-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)\n \n\\\n\n  https://pokeapi.bastionbot.org/v1/pokemon/658\n\n\n\n\n\n\nExample Response\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n76\n77\n78\n79\n80\n81\n82\n83\n84\n85\n86\n[\n\n  \n{\n\n    \nnumber\n:\n \n658\n,\n\n    \nname\n:\n \nGreninja\n,\n\n    \nspecies\n:\n \nNinja\n,\n\n    \ntypes\n:\n \n[\n\n      \nWater\n,\n\n      \nDark\n\n    \n],\n\n    \nabilities\n:\n \n{\n\n      \nnormal\n:\n \n[\n\n        \nTorrent\n\n      \n],\n\n      \nhidden\n:\n \n[\n\n        \nProtean\n\n      \n]\n\n    \n},\n\n    \neggGroups\n:\n \n[\n\n      \nWater 1\n\n    \n],\n\n    \ngender\n:\n \n[\n\n      \n87.5\n,\n\n      \n12.5\n\n    \n],\n\n    \nheight\n:\n \n4\n11\\\n,\n\n    \nweight\n:\n \n88.2 lbs.\n,\n\n    \nfamily\n:\n \n{\n\n      \nid\n:\n \n331\n,\n\n      \nevolutionStage\n:\n \n3\n,\n\n      \nevolution-line\n:\n \n[\n\n        \nFroakie\n,\n\n        \nFrogadier\n,\n\n        \nGreninja\n\n      \n]\n\n    \n},\n\n    \nstarter\n:\n \nfalse\n,\n\n    \nlegendary\n:\n \nfalse\n,\n\n    \nmythical\n:\n \nfalse\n,\n\n    \nultraBeast\n:\n \nfalse\n,\n\n    \nmega\n:\n \nfalse\n,\n\n    \ngen\n:\n \n6\n,\n\n    \nsprite\n:\n \nhttps://pokeres.bastionbot.org/images/pokemon/658.png\n\n  \n},\n\n  \n{\n\n    \nnumber\n:\n \n658\n,\n\n    \nname\n:\n \nAsh-Greninja\n,\n\n    \nspecies\n:\n \nNinja\n,\n\n    \ntypes\n:\n \n[\n\n      \nWater\n,\n\n      \nDark\n\n    \n],\n\n    \nabilities\n:\n \n{\n\n      \nnormal\n:\n \n[\n\n        \nTorrent\n\n      \n],\n\n      \nhidden\n:\n \n[\n\n        \nBattle Bond\n\n      \n]\n\n    \n},\n\n    \neggGroups\n:\n \n[\n\n      \nWater 1\n\n    \n],\n\n    \ngender\n:\n \n[\n\n      \n87.5\n,\n\n      \n12.5\n\n    \n],\n\n    \nheight\n:\n \n4\n11\\\n,\n\n    \nweight\n:\n \n88.2 lbs.\n,\n\n    \nfamily\n:\n \n{\n\n      \nid\n:\n \n331\n,\n\n      \nevolutionStage\n:\n \n3\n,\n\n      \nevolution-line\n:\n \n[\n\n        \nFroakie\n,\n\n        \nFrogadier\n,\n\n        \nGreninja\n\n      \n]\n\n    \n},\n\n    \nstarter\n:\n \nfalse\n,\n\n    \nlegendary\n:\n \nfalse\n,\n\n    \nmythical\n:\n \nfalse\n,\n\n    \nultraBeast\n:\n \nfalse\n,\n\n    \nmega\n:\n \nfalse\n,\n\n    \ngen\n:\n \n6\n,\n\n    \nsprite\n:\n \nhttps://pokeres.bastionbot.org/images/pokemon/658-ash.png\n\n  \n}\n\n\n]\n\n\n\n\n\n\n\nGet Pok\u00e9mon Counts\n#\n\n\nGET\n /pokemon/counts\n\n\nReturns a \nPok\u00e9mon Counts\n object containing\nthe number of Pok\u00e9mon in each generation and the total number of Pok\u00e9mon in the\nPok\u00e9mon World.\n\n\nExample Request\n#\n\n\n1\n2\n3\ncurl -i -X GET -H \n\\\n\n  \nUser-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)\n \n\\\n\n  https://pokeapi.bastionbot.org/v1/pokemon/counts\n\n\n\n\n\n\nExample Response\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n{\n\n  \ngen1\n:\n \n151\n,\n\n  \ngen2\n:\n \n100\n,\n\n  \ngen3\n:\n \n135\n,\n\n  \ngen4\n:\n \n107\n,\n\n  \ngen5\n:\n \n156\n,\n\n  \ngen6\n:\n \n72\n,\n\n  \ngen7\n:\n \n86\n,\n\n  \ntotal\n:\n \n807\n\n\n}\n\n\n\n\n\n\n\nPok\u00e9mon Models\n#\n\n\nPok\u00e9mon Object\n#\n\n\n\n  \nPok\u00e9mon Structure\n\n  \n\n    \n\n      \nField\n\n      \nType\n\n      \nDescription\n\n    \n\n  \n\n  \n\n    \n\n      \nnumber\n\n      \ninteger\n\n      \nThe Pok\u00e9dex number of the Pok\u00e9mon\n\n    \n\n    \n\n      \nname\n\n      \nstring\n\n      \nThe name of the Pok\u00e9mon\n\n    \n\n    \n\n      \nspecies\n\n      \nstring\n\n      \nThe species the Pok\u00e9mon belongs to\n\n    \n\n    \n\n      \ntypes\n\n      \narray of \nPok\u00e9mon types\n\n      \nThe type of the Pok\u00e9mon\n\n    \n\n    \n\n      \nabilities\n\n      \narray of normal and hidden Pok\u00e9mon abilities\n\n      \nThe abilities of the Pok\u00e9mon\n\n    \n\n    \n\n      \neggGroups\n\n      \narray of \nPok\u00e9mon egg groups\n\n      \nThe egg groups the Pok\u00e9mon belong to\n\n    \n\n    \n\n      \nheight\n\n      \nstring\n\n      \nThe height of the Pok\u00e9mon in feet\n\n    \n\n    \n\n      \nweight\n\n      \nstring\n\n      \nThe weight of the Pok\u00e9mon in pounds\n\n    \n\n    \n\n      \nfamily\n\n      \nPok\u00e9mon family\n object\n\n      \nThe family id, evolution stage and evolution line of the Pok\u00e9mon\n\n    \n\n    \n\n      \nstarter\n\n      \nbool\n\n      \nIs it a starter Pok\u00e9mon\n\n    \n\n    \n\n      \nlegendary\n\n      \nbool\n\n      \nIs it a legendary Pok\u00e9mon\n\n    \n\n    \n\n      \nmythical\n\n      \nbool\n\n      \nIs it a mythical Pok\u00e9mon\n\n    \n\n    \n\n      \nultraBeast\n\n      \nbool\n\n      \nIs it a ultra beast\n\n    \n\n    \n\n      \nmega\n\n      \nbool\n\n      \nIs it mega evolved form of the Pok\u00e9mon\n\n    \n\n    \n\n      \ngen\n\n      \ninteger\n\n      \nThe generation the Pok\u00e9mon was first discovered\n\n    \n\n    \n\n      \nsprite\n\n      \nstring\n\n      \nThe URL of an image of the Pok\u00e9mon\n\n    \n\n  \n\n\n\n\nPok\u00e9mon Family Object\n#\n\n\n\n  \nPok\u00e9mon Family Structure\n\n  \n\n    \n\n      \nField\n\n      \nType\n\n      \nDescription\n\n    \n\n  \n\n  \n\n    \n\n      \nid\n\n      \ninteger\n\n      \nThe id of Pok\u00e9mon family.\n\n    \n\n    \n\n      \nevolutionStage\n\n      \ninteger\n\n      \nThe evolved stage of the Pok\u00e9mon in it\ns evolution line.\n\n    \n\n    \n\n      \nevolutionLine\n\n      \narray of Pok\u00e9mon names\n\n      \nThe list of Pok\u00e9mon in it\ns evolution line.\n\n    \n\n  \n\n\n\n\nPok\u00e9mon Counts Object\n#\n\n\n\n  \nPok\u00e9mon Counts Structure\n\n  \n\n    \n\n      \nField\n\n      \nType\n\n      \nDescription\n\n    \n\n  \n\n  \n\n    \n\n      \ngen1\n\n      \ninteger\n\n      \nThe number of Pok\u00e9mon discovered in this generation.\n\n    \n\n    \n\n      \ngen2\n\n      \ninteger\n\n      \nThe number of Pok\u00e9mon discovered in this generation.\n\n    \n\n    \n\n      \n\u22ee\n\n      \ninteger\n\n      \nThe number of Pok\u00e9mon discovered in this generation.\n\n    \n\n    \n\n      \ntotal\n\n      \ninteger\n\n      \nThe total number of Pok\u00e9mon discovered in the Pok\u00e9mon World.", 
+            "title": "Pok\u00e9mon"
+        }, 
+        {
+            "location": "/resources/pokemon/#pokemon-resource", 
+            "text": "", 
+            "title": "Pok\u00e9mon Resource"
+        }, 
+        {
+            "location": "/resources/pokemon/#get-pokemon-by-pokedex-number", 
+            "text": "GET  /pokemon/ {number}  Returns an array of  Pok\u00e9mon  objects containing all\nthe forms of the Pok\u00e9mon specified the Pok\u00e9dex number.", 
+            "title": "Get Pok\u00e9mon by Pok\u00e9dex number"
+        }, 
+        {
+            "location": "/resources/pokemon/#example-request", 
+            "text": "1\n2\n3 curl -i -X GET -H  \\ \n   User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)   \\ \n  https://pokeapi.bastionbot.org/v1/pokemon/658", 
+            "title": "Example Request"
+        }, 
+        {
+            "location": "/resources/pokemon/#example-response", 
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n66\n67\n68\n69\n70\n71\n72\n73\n74\n75\n76\n77\n78\n79\n80\n81\n82\n83\n84\n85\n86 [ \n   { \n     number :   658 , \n     name :   Greninja , \n     species :   Ninja , \n     types :   [ \n       Water , \n       Dark \n     ], \n     abilities :   { \n       normal :   [ \n         Torrent \n       ], \n       hidden :   [ \n         Protean \n       ] \n     }, \n     eggGroups :   [ \n       Water 1 \n     ], \n     gender :   [ \n       87.5 , \n       12.5 \n     ], \n     height :   4 11\\ , \n     weight :   88.2 lbs. , \n     family :   { \n       id :   331 , \n       evolutionStage :   3 , \n       evolution-line :   [ \n         Froakie , \n         Frogadier , \n         Greninja \n       ] \n     }, \n     starter :   false , \n     legendary :   false , \n     mythical :   false , \n     ultraBeast :   false , \n     mega :   false , \n     gen :   6 , \n     sprite :   https://pokeres.bastionbot.org/images/pokemon/658.png \n   }, \n   { \n     number :   658 , \n     name :   Ash-Greninja , \n     species :   Ninja , \n     types :   [ \n       Water , \n       Dark \n     ], \n     abilities :   { \n       normal :   [ \n         Torrent \n       ], \n       hidden :   [ \n         Battle Bond \n       ] \n     }, \n     eggGroups :   [ \n       Water 1 \n     ], \n     gender :   [ \n       87.5 , \n       12.5 \n     ], \n     height :   4 11\\ , \n     weight :   88.2 lbs. , \n     family :   { \n       id :   331 , \n       evolutionStage :   3 , \n       evolution-line :   [ \n         Froakie , \n         Frogadier , \n         Greninja \n       ] \n     }, \n     starter :   false , \n     legendary :   false , \n     mythical :   false , \n     ultraBeast :   false , \n     mega :   false , \n     gen :   6 , \n     sprite :   https://pokeres.bastionbot.org/images/pokemon/658-ash.png \n   }  ]", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/resources/pokemon/#get-pokemon-counts", 
+            "text": "GET  /pokemon/counts  Returns a  Pok\u00e9mon Counts  object containing\nthe number of Pok\u00e9mon in each generation and the total number of Pok\u00e9mon in the\nPok\u00e9mon World.", 
+            "title": "Get Pok\u00e9mon Counts"
+        }, 
+        {
+            "location": "/resources/pokemon/#example-request_1", 
+            "text": "1\n2\n3 curl -i -X GET -H  \\ \n   User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)   \\ \n  https://pokeapi.bastionbot.org/v1/pokemon/counts", 
+            "title": "Example Request"
+        }, 
+        {
+            "location": "/resources/pokemon/#example-response_1", 
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10 { \n   gen1 :   151 , \n   gen2 :   100 , \n   gen3 :   135 , \n   gen4 :   107 , \n   gen5 :   156 , \n   gen6 :   72 , \n   gen7 :   86 , \n   total :   807  }", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/resources/pokemon/#pokemon-models", 
+            "text": "", 
+            "title": "Pok\u00e9mon Models"
+        }, 
+        {
+            "location": "/resources/pokemon/#pokemon-object", 
+            "text": "Pok\u00e9mon Structure \n   \n     \n       Field \n       Type \n       Description \n     \n   \n   \n     \n       number \n       integer \n       The Pok\u00e9dex number of the Pok\u00e9mon \n     \n     \n       name \n       string \n       The name of the Pok\u00e9mon \n     \n     \n       species \n       string \n       The species the Pok\u00e9mon belongs to \n     \n     \n       types \n       array of  Pok\u00e9mon types \n       The type of the Pok\u00e9mon \n     \n     \n       abilities \n       array of normal and hidden Pok\u00e9mon abilities \n       The abilities of the Pok\u00e9mon \n     \n     \n       eggGroups \n       array of  Pok\u00e9mon egg groups \n       The egg groups the Pok\u00e9mon belong to \n     \n     \n       height \n       string \n       The height of the Pok\u00e9mon in feet \n     \n     \n       weight \n       string \n       The weight of the Pok\u00e9mon in pounds \n     \n     \n       family \n       Pok\u00e9mon family  object \n       The family id, evolution stage and evolution line of the Pok\u00e9mon \n     \n     \n       starter \n       bool \n       Is it a starter Pok\u00e9mon \n     \n     \n       legendary \n       bool \n       Is it a legendary Pok\u00e9mon \n     \n     \n       mythical \n       bool \n       Is it a mythical Pok\u00e9mon \n     \n     \n       ultraBeast \n       bool \n       Is it a ultra beast \n     \n     \n       mega \n       bool \n       Is it mega evolved form of the Pok\u00e9mon \n     \n     \n       gen \n       integer \n       The generation the Pok\u00e9mon was first discovered \n     \n     \n       sprite \n       string \n       The URL of an image of the Pok\u00e9mon", 
+            "title": "Pok\u00e9mon Object"
+        }, 
+        {
+            "location": "/resources/pokemon/#pokemon-family-object", 
+            "text": "Pok\u00e9mon Family Structure \n   \n     \n       Field \n       Type \n       Description \n     \n   \n   \n     \n       id \n       integer \n       The id of Pok\u00e9mon family. \n     \n     \n       evolutionStage \n       integer \n       The evolved stage of the Pok\u00e9mon in it s evolution line. \n     \n     \n       evolutionLine \n       array of Pok\u00e9mon names \n       The list of Pok\u00e9mon in it s evolution line.", 
+            "title": "Pok\u00e9mon Family Object"
+        }, 
+        {
+            "location": "/resources/pokemon/#pokemon-counts-object", 
+            "text": "Pok\u00e9mon Counts Structure \n   \n     \n       Field \n       Type \n       Description \n     \n   \n   \n     \n       gen1 \n       integer \n       The number of Pok\u00e9mon discovered in this generation. \n     \n     \n       gen2 \n       integer \n       The number of Pok\u00e9mon discovered in this generation. \n     \n     \n       \u22ee \n       integer \n       The number of Pok\u00e9mon discovered in this generation. \n     \n     \n       total \n       integer \n       The total number of Pok\u00e9mon discovered in the Pok\u00e9mon World.", 
+            "title": "Pok\u00e9mon Counts Object"
+        }, 
+        {
+            "location": "/resources/categories/", 
+            "text": "Pok\u00e9mon Categories Resource\n#\n\n\nGet Pok\u00e9mon Categories\n#\n\n\nGET\n /categories\n\n\nReturns an array of Pok\u00e9mon Categories discovered in the Pok\u00e9mon World.\n\n\nExample Request\n#\n\n\n1\n2\n3\ncurl -i -X GET -H \n\\\n\n  \nUser-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)\n \n\\\n\n  https://pokeapi.bastionbot.org/v1/categories\n\n\n\n\n\n\nExample Response\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n[\n\n  \nstarter\n,\n\n  \nlegendary\n,\n\n  \nmythical\n,\n\n  \nultraBeast\n,\n\n  \nmega\n\n\n]", 
+            "title": "Categories"
+        }, 
+        {
+            "location": "/resources/categories/#pokemon-categories-resource", 
+            "text": "", 
+            "title": "Pok\u00e9mon Categories Resource"
+        }, 
+        {
+            "location": "/resources/categories/#get-pokemon-categories", 
+            "text": "GET  /categories  Returns an array of Pok\u00e9mon Categories discovered in the Pok\u00e9mon World.", 
+            "title": "Get Pok\u00e9mon Categories"
+        }, 
+        {
+            "location": "/resources/categories/#example-request", 
+            "text": "1\n2\n3 curl -i -X GET -H  \\ \n   User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)   \\ \n  https://pokeapi.bastionbot.org/v1/categories", 
+            "title": "Example Request"
+        }, 
+        {
+            "location": "/resources/categories/#example-response", 
+            "text": "1\n2\n3\n4\n5\n6\n7 [ \n   starter , \n   legendary , \n   mythical , \n   ultraBeast , \n   mega  ]", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/resources/egg-groups/", 
+            "text": "Pok\u00e9mon Egg Groups Resource\n#\n\n\nGet Pok\u00e9mon Egg Groups\n#\n\n\nGET\n /egg-groups\n\n\nReturns an array of Pok\u00e9mon Egg Groups discovered in the Pok\u00e9mon World.\n\n\nExample Request\n#\n\n\n1\n2\n3\ncurl -i -X GET -H \n\\\n\n  \nUser-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)\n \n\\\n\n  https://pokeapi.bastionbot.org/v1/egg-groups\n\n\n\n\n\n\nExample Response\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n[\n\n  \nBug\n,\n\n  \nDitto\n,\n\n  \nDragon\n,\n\n  \nFairy\n,\n\n  \nField\n,\n\n  \nFlying\n,\n\n  \nGrass\n,\n\n  \nGender unknown\n,\n\n  \nHuman-Like\n,\n\n  \nMineral\n,\n\n  \nMonster\n,\n\n  \nAmorphous\n,\n\n  \nUndiscovered\n,\n\n  \nWater 1\n,\n\n  \nWater 2\n,\n\n  \nWater 3\n\n\n]", 
+            "title": "Egg Groups"
+        }, 
+        {
+            "location": "/resources/egg-groups/#pokemon-egg-groups-resource", 
+            "text": "", 
+            "title": "Pok\u00e9mon Egg Groups Resource"
+        }, 
+        {
+            "location": "/resources/egg-groups/#get-pokemon-egg-groups", 
+            "text": "GET  /egg-groups  Returns an array of Pok\u00e9mon Egg Groups discovered in the Pok\u00e9mon World.", 
+            "title": "Get Pok\u00e9mon Egg Groups"
+        }, 
+        {
+            "location": "/resources/egg-groups/#example-request", 
+            "text": "1\n2\n3 curl -i -X GET -H  \\ \n   User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)   \\ \n  https://pokeapi.bastionbot.org/v1/egg-groups", 
+            "title": "Example Request"
+        }, 
+        {
+            "location": "/resources/egg-groups/#example-response", 
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18 [ \n   Bug , \n   Ditto , \n   Dragon , \n   Fairy , \n   Field , \n   Flying , \n   Grass , \n   Gender unknown , \n   Human-Like , \n   Mineral , \n   Monster , \n   Amorphous , \n   Undiscovered , \n   Water 1 , \n   Water 2 , \n   Water 3  ]", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/resources/evolution-stones/", 
+            "text": "Evolution Stones Resource\n#\n\n\nGet Evolution Stone Names\n#\n\n\nGET\n /evolution-stone\n\n\nReturns an array of Pok\u00e9mon Evolution Stone names discovered in the Pok\u00e9mon\nworld.\n\n\nExample Request\n#\n\n\n1\n2\n3\ncurl -i -X GET -H \n\\\n\n  \nUser-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)\n \n\\\n\n  https://pokeapi.bastionbot.org/v1/evolution-stone\n\n\n\n\n\n\nExample Response\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n[\n\n  \nFire Stone\n,\n\n  \nWater Stone\n,\n\n  \nThunder Stone\n,\n\n  \nLeaf Stone\n,\n\n  \nMoon Stone\n,\n\n  \nSun Stone\n,\n\n  \nShiny Stone\n,\n\n  \nDusk Stone\n,\n\n  \nDawn Stone\n,\n\n  \nIce Stone\n\n\n]\n\n\n\n\n\n\n\nGet Evolution Stone\n#\n\n\nGET\n /evolution-stone/\n{slug}\n\n\nReturns a Evolution Stone object containing the details about the evolution\nstone.\n\n\nExample Request\n#\n\n\n1\n2\n3\ncurl -i -X GET -H \n\\\n\n  \nUser-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)\n \n\\\n\n  https://pokeapi.bastionbot.org/v1/evolution-stone/dusk\n\n\n\n\n\n\nExample Response\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n{\n\n  \nname\n:\n \nDusk Stone\n,\n\n  \naka\n:\n \nDarkness Stone\n,\n\n  \nslug\n:\n \ndusk\n,\n\n  \neffects\n:\n \n[\n\n    \nCauses Murkrow to evolve into Honchkrow.\n,\n\n    \nCauses Misdreavus to evolve into Mismagius.\n,\n\n    \nCauses Lampent to evolve into Chandelure.\n,\n\n    \nCauses Doublade to evolve into Aegislash.\n\n  \n],\n\n  \nsprite\n:\n \nhttps://pokeres.bastionbot.org/images/evolution-stones/dusk-stone.png\n\n\n}\n\n\n\n\n\n\n\nEvolution Stone Models\n#\n\n\nEvolution Stone Object\n#\n\n\n\n  \nEvolution Stone Structure\n\n  \n\n    \n\n      \nField\n\n      \nType\n\n      \nDescription\n\n    \n\n  \n\n  \n\n    \n\n      \nname\n\n      \nstring\n\n      \nThe name of evolution stone\n\n    \n\n    \n\n      \naka\n\n      \nstring\n\n      \nThe alternate name of the evolution stone\n\n    \n\n    \n\n      \nslug\n\n      \nstring\n\n      \nThe string used to identify this evolution stone.\n\n    \n\n    \n\n      \neffects\n\n      \narray of strings\n\n      \nA list of the effects of using the evolution stone on a Pok\u00e9mon\n\n    \n\n    \n\n      \nsprite\n\n      \ninteger\n\n      \nThe URL of an image of the evolution stone", 
+            "title": "Evolution Stones"
+        }, 
+        {
+            "location": "/resources/evolution-stones/#evolution-stones-resource", 
+            "text": "", 
+            "title": "Evolution Stones Resource"
+        }, 
+        {
+            "location": "/resources/evolution-stones/#get-evolution-stone-names", 
+            "text": "GET  /evolution-stone  Returns an array of Pok\u00e9mon Evolution Stone names discovered in the Pok\u00e9mon\nworld.", 
+            "title": "Get Evolution Stone Names"
+        }, 
+        {
+            "location": "/resources/evolution-stones/#example-request", 
+            "text": "1\n2\n3 curl -i -X GET -H  \\ \n   User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)   \\ \n  https://pokeapi.bastionbot.org/v1/evolution-stone", 
+            "title": "Example Request"
+        }, 
+        {
+            "location": "/resources/evolution-stones/#example-response", 
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12 [ \n   Fire Stone , \n   Water Stone , \n   Thunder Stone , \n   Leaf Stone , \n   Moon Stone , \n   Sun Stone , \n   Shiny Stone , \n   Dusk Stone , \n   Dawn Stone , \n   Ice Stone  ]", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/resources/evolution-stones/#get-evolution-stone", 
+            "text": "GET  /evolution-stone/ {slug}  Returns a Evolution Stone object containing the details about the evolution\nstone.", 
+            "title": "Get Evolution Stone"
+        }, 
+        {
+            "location": "/resources/evolution-stones/#example-request_1", 
+            "text": "1\n2\n3 curl -i -X GET -H  \\ \n   User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)   \\ \n  https://pokeapi.bastionbot.org/v1/evolution-stone/dusk", 
+            "title": "Example Request"
+        }, 
+        {
+            "location": "/resources/evolution-stones/#example-response_1", 
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12 { \n   name :   Dusk Stone , \n   aka :   Darkness Stone , \n   slug :   dusk , \n   effects :   [ \n     Causes Murkrow to evolve into Honchkrow. , \n     Causes Misdreavus to evolve into Mismagius. , \n     Causes Lampent to evolve into Chandelure. , \n     Causes Doublade to evolve into Aegislash. \n   ], \n   sprite :   https://pokeres.bastionbot.org/images/evolution-stones/dusk-stone.png  }", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/resources/evolution-stones/#evolution-stone-models", 
+            "text": "", 
+            "title": "Evolution Stone Models"
+        }, 
+        {
+            "location": "/resources/evolution-stones/#evolution-stone-object", 
+            "text": "Evolution Stone Structure \n   \n     \n       Field \n       Type \n       Description \n     \n   \n   \n     \n       name \n       string \n       The name of evolution stone \n     \n     \n       aka \n       string \n       The alternate name of the evolution stone \n     \n     \n       slug \n       string \n       The string used to identify this evolution stone. \n     \n     \n       effects \n       array of strings \n       A list of the effects of using the evolution stone on a Pok\u00e9mon \n     \n     \n       sprite \n       integer \n       The URL of an image of the evolution stone", 
+            "title": "Evolution Stone Object"
+        }, 
+        {
+            "location": "/resources/leagues/", 
+            "text": "Pok\u00e9mon Leagues Resource\n#\n\n\nGet Pok\u00e9mon League Names\n#\n\n\nGET\n /league\n\n\nReturns an array of Pok\u00e9mon League names known to us.\n\n\nExample Request\n#\n\n\n1\n2\n3\ncurl -i -X GET -H \n\\\n\n  \nUser-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)\n \n\\\n\n  https://pokeapi.bastionbot.org/v1/league\n\n\n\n\n\n\nExample Response\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n[\n\n  \nIndigo League\n,\n\n  \nJohto League\n,\n\n  \nHoenn League\n,\n\n  \nSinnoh League\n,\n\n  \nUnova League\n,\n\n  \nKalos League\n,\n\n  \nOrange League\n\n\n]\n\n\n\n\n\n\n\nGet Pok\u00e9mon League\n#\n\n\nGET\n /league/\n{slug}\n\n\nReturns a Pok\u00e9mon League object containing the details about the league.\n\n\nExample Request\n#\n\n\n1\n2\n3\ncurl -i -X GET -H \n\\\n\n  \nUser-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)\n \n\\\n\n  https://pokeapi.bastionbot.org/v1/league/kalos\n\n\n\n\n\n\nExample Response\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n{\n\n  \nname\n:\n \nKalos League\n,\n\n  \nslug\n:\n \nkalos\n,\n\n  \nregion\n:\n \nKalos\n,\n\n  \nbadgesRequired\n:\n \n8\n,\n\n  \nbadges\n:\n \n[\n\n    \nBug Badge\n,\n\n    \nCliff Badge\n,\n\n    \nRumble Badge\n,\n\n    \nPlant Badge\n,\n\n    \nVoltage Badge\n,\n\n    \nFairy Badge\n,\n\n    \nPsychic Badge\n,\n\n    \nIceberg Badge\n\n  \n]\n\n\n}\n\n\n\n\n\n\n\nPok\u00e9mon League Models\n#\n\n\nPok\u00e9mon League Object\n#\n\n\n\n  \nPok\u00e9mon League Structure\n\n  \n\n    \n\n      \nField\n\n      \nType\n\n      \nDescription\n\n    \n\n  \n\n  \n\n    \n\n      \nname\n\n      \nstring\n\n      \nThe name of Pok\u00e9mon league\n\n    \n\n    \n\n      \nslug\n\n      \nstring\n\n      \nThe string used to identify this region.\n\n    \n\n    \n\n      \nregion\n\n      \nstring\n\n      \nThe region in the Pok\u00e9mon World where the league happens\n\n    \n\n    \n\n      \nbadgesRequired\n\n      \ninteger\n\n      \nThe minimum number of Pok\u00e9mon gym badges required to qualify for the Pok\u00e9mon league\n\n    \n\n    \n\n      \nbadges\n\n      \narray of Pok\u00e9mon badge names\n\n      \nThe minimum number of Pok\u00e9mon gym badges required to qualify for the Pok\u00e9mon league", 
+            "title": "Leagues"
+        }, 
+        {
+            "location": "/resources/leagues/#pokemon-leagues-resource", 
+            "text": "", 
+            "title": "Pok\u00e9mon Leagues Resource"
+        }, 
+        {
+            "location": "/resources/leagues/#get-pokemon-league-names", 
+            "text": "GET  /league  Returns an array of Pok\u00e9mon League names known to us.", 
+            "title": "Get Pok\u00e9mon League Names"
+        }, 
+        {
+            "location": "/resources/leagues/#example-request", 
+            "text": "1\n2\n3 curl -i -X GET -H  \\ \n   User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)   \\ \n  https://pokeapi.bastionbot.org/v1/league", 
+            "title": "Example Request"
+        }, 
+        {
+            "location": "/resources/leagues/#example-response", 
+            "text": "1\n2\n3\n4\n5\n6\n7\n8\n9 [ \n   Indigo League , \n   Johto League , \n   Hoenn League , \n   Sinnoh League , \n   Unova League , \n   Kalos League , \n   Orange League  ]", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/resources/leagues/#get-pokemon-league", 
+            "text": "GET  /league/ {slug}  Returns a Pok\u00e9mon League object containing the details about the league.", 
+            "title": "Get Pok\u00e9mon League"
+        }, 
+        {
+            "location": "/resources/leagues/#example-request_1", 
+            "text": "1\n2\n3 curl -i -X GET -H  \\ \n   User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)   \\ \n  https://pokeapi.bastionbot.org/v1/league/kalos", 
+            "title": "Example Request"
+        }, 
+        {
+            "location": "/resources/leagues/#example-response_1", 
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16 { \n   name :   Kalos League , \n   slug :   kalos , \n   region :   Kalos , \n   badgesRequired :   8 , \n   badges :   [ \n     Bug Badge , \n     Cliff Badge , \n     Rumble Badge , \n     Plant Badge , \n     Voltage Badge , \n     Fairy Badge , \n     Psychic Badge , \n     Iceberg Badge \n   ]  }", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/resources/leagues/#pokemon-league-models", 
+            "text": "", 
+            "title": "Pok\u00e9mon League Models"
+        }, 
+        {
+            "location": "/resources/leagues/#pokemon-league-object", 
+            "text": "Pok\u00e9mon League Structure \n   \n     \n       Field \n       Type \n       Description \n     \n   \n   \n     \n       name \n       string \n       The name of Pok\u00e9mon league \n     \n     \n       slug \n       string \n       The string used to identify this region. \n     \n     \n       region \n       string \n       The region in the Pok\u00e9mon World where the league happens \n     \n     \n       badgesRequired \n       integer \n       The minimum number of Pok\u00e9mon gym badges required to qualify for the Pok\u00e9mon league \n     \n     \n       badges \n       array of Pok\u00e9mon badge names \n       The minimum number of Pok\u00e9mon gym badges required to qualify for the Pok\u00e9mon league", 
+            "title": "Pok\u00e9mon League Object"
+        }, 
+        {
+            "location": "/resources/types/", 
+            "text": "Pok\u00e9mon Types Resource\n#\n\n\nGet Pok\u00e9mon Types\n#\n\n\nGET\n /types\n\n\nReturns an array of Pok\u00e9mon Types discovered in the Pok\u00e9mon World.\n\n\nExample Request\n#\n\n\n1\n2\n3\ncurl -i -X GET -H \n\\\n\n  \nUser-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)\n \n\\\n\n  https://pokeapi.bastionbot.org/v1/types\n\n\n\n\n\n\nExample Response\n#\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n[\n\n  \nBug\n,\n\n  \nDark\n,\n\n  \nDragon\n,\n\n  \nElectric\n,\n\n  \nFairy\n,\n\n  \nFighting\n,\n\n  \nFire\n,\n\n  \nFlying\n,\n\n  \nGhost\n,\n\n  \nGrass\n,\n\n  \nGround\n,\n\n  \nIce\n,\n\n  \nNormal\n,\n\n  \nPoison\n,\n\n  \nPsychic\n,\n\n  \nRock\n,\n\n  \nSteel\n,\n\n  \nWater\n\n\n]", 
+            "title": "Types"
+        }, 
+        {
+            "location": "/resources/types/#pokemon-types-resource", 
+            "text": "", 
+            "title": "Pok\u00e9mon Types Resource"
+        }, 
+        {
+            "location": "/resources/types/#get-pokemon-types", 
+            "text": "GET  /types  Returns an array of Pok\u00e9mon Types discovered in the Pok\u00e9mon World.", 
+            "title": "Get Pok\u00e9mon Types"
+        }, 
+        {
+            "location": "/resources/types/#example-request", 
+            "text": "1\n2\n3 curl -i -X GET -H  \\ \n   User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)   \\ \n  https://pokeapi.bastionbot.org/v1/types", 
+            "title": "Example Request"
+        }, 
+        {
+            "location": "/resources/types/#example-response", 
+            "text": "1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20 [ \n   Bug , \n   Dark , \n   Dragon , \n   Electric , \n   Fairy , \n   Fighting , \n   Fire , \n   Flying , \n   Ghost , \n   Grass , \n   Ground , \n   Ice , \n   Normal , \n   Poison , \n   Psychic , \n   Rock , \n   Steel , \n   Water  ]", 
+            "title": "Example Response"
         }, 
         {
             "location": "/about/", 
