@@ -42,7 +42,7 @@ stone.
     "Causes Lampent to evolve into Chandelure.",
     "Causes Doublade to evolve into Aegislash."
   ],
-  "sprite": "https://resources.pokedevs.bastionbot.org/images/evolution-stones/dusk-stone.png"
+  "sprite": "https://pokeres.bastionbot.org/images/evolution-stones/dusk-stone.png"
 }
 ```
 

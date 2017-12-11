@@ -52,7 +52,7 @@ the forms of the Pokémon specified the Pokédex number.
     "ultraBeast": false,
     "mega": false,
     "gen": 6,
-    "sprite": "https://resources.pokedevs.bastionbot.org/images/pokemon/658.png"
+    "sprite": "https://pokeres.bastionbot.org/images/pokemon/658.png"
   },
   {
     "number": "658",
@@ -94,7 +94,7 @@ the forms of the Pokémon specified the Pokédex number.
     "ultraBeast": false,
     "mega": false,
     "gen": 6,
-    "sprite": "https://resources.pokedevs.bastionbot.org/images/pokemon/658-ash.png"
+    "sprite": "https://pokeres.bastionbot.org/images/pokemon/658-ash.png"
   }
 ]
 ```
@@ -150,7 +150,7 @@ Pokémon World.
     </tr>
     <tr>
       <td>types</td>
-      <td>array of Pokémon types</td>
+      <td>array of <a href="types.md">Pokémon types</a></td>
       <td>The type of the Pokémon</td>
     </tr>
     <tr>
@@ -160,7 +160,7 @@ Pokémon World.
     </tr>
     <tr>
       <td>eggGroups</td>
-      <td>array of Pokémon egg groups</td>
+      <td>array of <a href="egg-groups.md">Pokémon egg groups</a></td>
       <td>The egg groups the Pokémon belong to</td>
     </tr>
     <tr>
