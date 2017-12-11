@@ -8,6 +8,13 @@ description: Checkout all the resources of the Pokédex API and start building y
 
 Returns an array of Pokémon Egg Groups discovered in the Pokémon World.
 
+### Example Request
+```bash
+curl -i -X GET -H \
+  "User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)" \
+  https://pokeapi.bastionbot.org/v1/egg-groups
+```
+
 ### Example Response
 ```json
 [

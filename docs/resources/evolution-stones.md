@@ -9,6 +9,13 @@ description: Checkout all the resources of the Pokédex API and start building y
 Returns an array of Pokémon Evolution Stone names discovered in the Pokémon
 world.
 
+### Example Request
+```bash
+curl -i -X GET -H \
+  "User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)" \
+  https://pokeapi.bastionbot.org/v1/evolution-stone
+```
+
 ### Example Response
 ```json
 [
@@ -30,6 +37,13 @@ world.
 
 Returns a Evolution Stone object containing the details about the evolution
 stone.
+
+### Example Request
+```bash
+curl -i -X GET -H \
+  "User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)" \
+  https://pokeapi.bastionbot.org/v1/evolution-stone/dusk
+```
 
 ### Example Response
 ```json

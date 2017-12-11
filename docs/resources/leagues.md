@@ -8,6 +8,13 @@ description: Checkout all the resources of the Pokédex API and start building y
 
 Returns an array of Pokémon League names known to us.
 
+### Example Request
+```bash
+curl -i -X GET -H \
+  "User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)" \
+  https://pokeapi.bastionbot.org/v1/league
+```
+
 ### Example Response
 ```json
 [
@@ -25,6 +32,13 @@ Returns an array of Pokémon League names known to us.
 <span class="resource"><span class="get">GET</span> /league/<a href="#pokemon-league-object">{slug}</a></span>
 
 Returns a Pokémon League object containing the details about the league.
+
+### Example Request
+```bash
+curl -i -X GET -H \
+  "User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)" \
+  https://pokeapi.bastionbot.org/v1/league/kalos
+```
 
 ### Example Response
 ```json

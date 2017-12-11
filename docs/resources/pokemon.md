@@ -9,6 +9,13 @@ description: Checkout all the resources of the Pokédex API and start building y
 Returns an array of <a href="#pokemon-object">Pokémon</a> objects containing all
 the forms of the Pokémon specified the Pokédex number.
 
+### Example Request
+```bash
+curl -i -X GET -H \
+  "User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)" \
+  https://pokeapi.bastionbot.org/v1/pokemon/658
+```
+
 ### Example Response
 ```json
 [
@@ -100,11 +107,18 @@ the forms of the Pokémon specified the Pokédex number.
 ```
 
 ## Get Pokémon Counts
-<span class="resource"><span class="get">GET</span> /pokemon/count</span>
+<span class="resource"><span class="get">GET</span> /pokemon/counts</span>
 
 Returns a <a href="#pokemon-counts-object">Pokémon Counts</a> object containing
 the number of Pokémon in each generation and the total number of Pokémon in the
 Pokémon World.
+
+### Example Request
+```bash
+curl -i -X GET -H \
+  "User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)" \
+  https://pokeapi.bastionbot.org/v1/pokemon/counts
+```
 
 ### Example Response
 ```json
