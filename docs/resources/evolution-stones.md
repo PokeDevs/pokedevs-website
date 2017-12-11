@@ -11,8 +11,8 @@ world.
 
 ### Example Request
 ```bash
-curl -i -X GET -H \
-  "User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)" \
+curl -i -X GET \
+  -H "User-Agent: BastionDiscordBot (https://bastionbot.org, v6.3)" \
   https://pokeapi.bastionbot.org/v1/evolution-stone
 ```
 
