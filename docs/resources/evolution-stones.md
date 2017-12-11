@@ -42,7 +42,8 @@ stone.
     "Causes Lampent to evolve into Chandelure.",
     "Causes Doublade to evolve into Aegislash."
   ],
-  "sprite": "https://pokeres.bastionbot.org/images/evolution-stones/dusk-stone.png"
+  "sprite": "https://pokeres.bastionbot.org/images/evolution-stones/dusk-stone.png",
+  "slug": "dusk"
 }
 ```
 
@@ -78,6 +79,11 @@ stone.
       <td>sprite</td>
       <td>integer</td>
       <td>The URL of an image of the evolution stone</td>
+    </tr>
+    <tr>
+      <td>slug</td>
+      <td>string</td>
+      <td>The string used to identify this resource.</td>
     </tr>
   </tbody>
 </table>
