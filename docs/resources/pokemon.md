@@ -155,7 +155,7 @@ Pokémon World.
     </tr>
     <tr>
       <td>abilities</td>
-      <td>array of Pokémon abilities</td>
+      <td>array of normal and hidden Pokémon abilities</td>
       <td>The abilities of the Pokémon</td>
     </tr>
     <tr>
