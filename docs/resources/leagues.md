@@ -22,7 +22,7 @@ Returns an array of Pokémon League names known to us.
 ```
 
 ## Get Pokémon League
-<span class="resource"><span class="get">GET</span> /league/<a href="#">{name}</a></span>
+<span class="resource"><span class="get">GET</span> /league/<a href="#pokemon-league-object">{slug}</a></span>
 
 Returns a Pokémon League object containing the details about the league.
 
@@ -30,6 +30,7 @@ Returns a Pokémon League object containing the details about the league.
 ```json
 {
   "name": "Kalos League",
+  "slug": "kalos",
   "region": "Kalos",
   "badgesRequired": 8,
   "badges": [
@@ -62,6 +63,11 @@ Returns a Pokémon League object containing the details about the league.
       <td>name</td>
       <td>string</td>
       <td>The name of Pokémon league</td>
+    </tr>
+    <tr>
+      <td>slug</td>
+      <td>string</td>
+      <td>The string used to identify this region.</td>
     </tr>
     <tr>
       <td>region</td>

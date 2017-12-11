@@ -4,7 +4,7 @@ description: Checkout all the resources of the Pokédex API and start building y
 # Pokémon Resource
 
 ## Get Pokémon <small>by Pokédex number</small>
-<span class="resource"><span class="get">GET</span> /pokemon/<a href="#">{number}</a></span>
+<span class="resource"><span class="get">GET</span> /pokemon/<a href="#pokemon-object">{number}</a></span>
 
 Returns an array of <a href="#pokemon-object">Pokémon</a> objects containing all
 the forms of the Pokémon specified the Pokédex number.

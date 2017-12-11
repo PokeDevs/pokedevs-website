@@ -26,7 +26,7 @@ world.
 ```
 
 ## Get Evolution Stone
-<span class="resource"><span class="get">GET</span> /evolution-stone/<a href="#">{name}</a></span>
+<span class="resource"><span class="get">GET</span> /evolution-stone/<a href="#evolution-stone-object">{slug}</a></span>
 
 Returns a Evolution Stone object containing the details about the evolution
 stone.
@@ -36,14 +36,14 @@ stone.
 {
   "name": "Dusk Stone",
   "aka": "Darkness Stone",
+  "slug": "dusk",
   "effects": [
     "Causes Murkrow to evolve into Honchkrow.",
     "Causes Misdreavus to evolve into Mismagius.",
     "Causes Lampent to evolve into Chandelure.",
     "Causes Doublade to evolve into Aegislash."
   ],
-  "sprite": "https://pokeres.bastionbot.org/images/evolution-stones/dusk-stone.png",
-  "slug": "dusk"
+  "sprite": "https://pokeres.bastionbot.org/images/evolution-stones/dusk-stone.png"
 }
 ```
 
@@ -71,6 +71,11 @@ stone.
       <td>The alternate name of the evolution stone</td>
     </tr>
     <tr>
+      <td>slug</td>
+      <td>string</td>
+      <td>The string used to identify this evolution stone.</td>
+    </tr>
+    <tr>
       <td>effects</td>
       <td>array of strings</td>
       <td>A list of the effects of using the evolution stone on a Pokémon</td>
@@ -79,11 +84,6 @@ stone.
       <td>sprite</td>
       <td>integer</td>
       <td>The URL of an image of the evolution stone</td>
-    </tr>
-    <tr>
-      <td>slug</td>
-      <td>string</td>
-      <td>The string used to identify this resource.</td>
     </tr>
   </tbody>
 </table>
