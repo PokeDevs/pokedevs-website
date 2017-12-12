@@ -156,7 +156,7 @@ The rate-limiting response will look something like the following:
 < X-RateLimit-Reset: 905212800000
 {
   "error": 429,
-  "message": "You are being rate limited.",
+  "message": "You are being rate limited. You're way too spicy at catching Pokémon.",
   "retry_after": 14400000
 }
 ```
