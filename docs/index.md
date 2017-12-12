@@ -15,20 +15,20 @@ and we would :heart: corrections and improvements!
 
 <hr>
 
-Come join our [official Discord server](# 'Poké Devs')
+Come join our [official Discord server](https://discord.gg/7P4H3TY 'Poké Devs')
 if you wanna hang out with other developers and see what they are crafting
 out of the API.
 
 We look forward to see you make awesome apps using our API.
 
-<a href="#" title="Join Poké Devs">
+<a href="https://discord.gg/7P4H3TY" title="Join Poké Devs">
   <div class="discordInvite">
-    <div class="di-title">You're not yet invited</div>
+    <div class="di-title">You've been invited to join</div>
     <div class="di-icon"></div>
     <div class="di-content">
       <div class="di-content__title">Poké Devs</div>
       <div class="di-content__meta">Gotta catch 'em all!</div>
     </div>
-    <div class="di-button disabled">Join</div>
+    <div class="di-button">Join</div>
   </div>
 </a>

@@ -36,6 +36,8 @@ extra:
   social:
     - type: 'github'
       link: 'https://github.com/PokeDevs'
+    - type: 'discord'
+      link: 'https://discord.gg/7P4H3TY'
 
 # Extensions
 markdown_extensions:

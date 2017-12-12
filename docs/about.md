@@ -37,4 +37,4 @@ So, the answer to the final question, I'm [Sankarsan Kampa](https://sankarsankam
 *a.k.a. k3rn31p4nic*. You can find me on GitHub [@k3rn31p4nic](https://github.com/k3rn31p4nic),
 on Twitter [@k3rn31p4nic](https://twitter.com/k3rn31p4nic) or on Discord as
 **k3rn31p4nic#8383** in any of my Discord Servers, [Bastion](https://discord.gg/fzx8fkt)
-or [Poké Devs]().
+or [Poké Devs](https://discord.gg/7P4H3TY).
