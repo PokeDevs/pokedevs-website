@@ -13,7 +13,7 @@
         <meta name="description" content="Checkout all the resources of the Pokédex API and start building your application or website.">
       
       
-        <link rel="canonical" href="https://pokedevs.github.io/pokedevs-website/resources/leagues/">
+        <link rel="canonical" href="https://pokedevs.github.io/pokedevs-website/resources/meta/">
       
       
         <meta name="author" content="Sankarsan Kampa">
@@ -102,7 +102,7 @@
                 Under Construction
               </span>
               <span class="md-header-nav__topic">
-                Leagues
+                Meta
               </span>
             
           
@@ -344,6 +344,30 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../leagues/" title="Leagues" class="md-nav__link">
+      Leagues
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../types/" title="Types" class="md-nav__link">
+      Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -355,11 +379,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Leagues
+        Meta
       </label>
     
-    <a href="./" title="Leagues" class="md-nav__link md-nav__link--active">
-      Leagues
+    <a href="./" title="Meta" class="md-nav__link md-nav__link--active">
+      Meta
     </a>
     
       
@@ -373,8 +397,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#get-pokemon-league-names" title="Get Pokémon League Names" class="md-nav__link">
-    Get Pokémon League Names
+  <a href="#get-pokedex-api-information" title="Get Pokédex API Information" class="md-nav__link">
+    Get Pokédex API Information
   </a>
   
     <nav class="md-nav">
@@ -400,8 +424,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-pokemon-league" title="Get Pokémon League" class="md-nav__link">
-    Get Pokémon League
+  <a href="#get-pokedex-api-statistics" title="Get Pokédex API Statistics" class="md-nav__link">
+    Get Pokédex API Statistics
   </a>
   
     <nav class="md-nav">
@@ -426,56 +450,12 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#pokemon-league-models" title="Pokémon League Models" class="md-nav__link">
-    Pokémon League Models
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pokemon-league-object" title="Pokémon League Object" class="md-nav__link">
-    Pokémon League Object
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
       
       
     </ul>
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../types/" title="Types" class="md-nav__link">
-      Types
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../meta/" title="Meta" class="md-nav__link">
-      Meta
-    </a>
   </li>
 
         
@@ -546,8 +526,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#get-pokemon-league-names" title="Get Pokémon League Names" class="md-nav__link">
-    Get Pokémon League Names
+  <a href="#get-pokedex-api-information" title="Get Pokédex API Information" class="md-nav__link">
+    Get Pokédex API Information
   </a>
   
     <nav class="md-nav">
@@ -573,8 +553,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-pokemon-league" title="Get Pokémon League" class="md-nav__link">
-    Get Pokémon League
+  <a href="#get-pokedex-api-statistics" title="Get Pokédex API Statistics" class="md-nav__link">
+    Get Pokédex API Statistics
   </a>
   
     <nav class="md-nav">
@@ -599,26 +579,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#pokemon-league-models" title="Pokémon League Models" class="md-nav__link">
-    Pokémon League Models
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pokemon-league-object" title="Pokémon League Object" class="md-nav__link">
-    Pokémon League Object
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
       
       
     </ul>
@@ -633,19 +593,25 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/PokeDevs/pokedevs-website/edit/master/docs/resources/leagues.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/PokeDevs/pokedevs-website/edit/master/docs/resources/meta.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="pokemon-leagues-resource">Pokémon Leagues Resource<a class="headerlink" href="#pokemon-leagues-resource" title="Permanent link">#</a></h1>
-<h2 id="get-pokemon-league-names">Get Pokémon League Names<a class="headerlink" href="#get-pokemon-league-names" title="Permanent link">#</a></h2>
-<p><span class="resource"><span class="get">GET</span> /league</span></p>
-<p>Returns an array of Pokémon League names known to us.</p>
+                <h1 id="pokedex-meta-resource">Pokédex Meta Resource<a class="headerlink" href="#pokedex-meta-resource" title="Permanent link">#</a></h1>
+<h2 id="get-pokedex-api-information">Get Pokédex API Information<a class="headerlink" href="#get-pokedex-api-information" title="Permanent link">#</a></h2>
+<p><span class="resource"><span class="get">GET</span> /info</span></p>
+<p>Returns basic information about the Pokédex API containing the base URL,
+resources URL, available versions, etc.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This endpoint doesn&rsquo;t work with versioning. You should access this endpoint
+directly from the base URL.</p>
+</div>
 <h3 id="example-request">Example Request<a class="headerlink" href="#example-request" title="Permanent link">#</a></h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>curl -i -X GET <span class="se">\</span>
   -H <span class="s2">&quot;User-Agent: BastionDiscordBot (https://bastionbot.org, v6.3)&quot;</span> <span class="se">\</span>
-  https://pokeapi.bastionbot.org/v1/league
+  https://pokeapi.bastionbot.org/info
 </pre></div>
 </td></tr></table>
 
@@ -658,69 +624,20 @@
 6
 7
 8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">[</span>
-  <span class="s2">&quot;Indigo League&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;Johto League&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;Hoenn League&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;Sinnoh League&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;Unova League&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;Kalos League&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;Orange League&quot;</span>
-<span class="p">]</span>
-</pre></div>
-</td></tr></table>
-
-<h2 id="get-pokemon-league">Get Pokémon League<a class="headerlink" href="#get-pokemon-league" title="Permanent link">#</a></h2>
-<p><span class="resource"><span class="get">GET</span> /league/<a href="#pokemon-league-object">{slug}</a></span></p>
-<p>Returns a Pokémon League object containing the details about the league.</p>
-<h3 id="example-request_1">Example Request<a class="headerlink" href="#example-request_1" title="Permanent link">#</a></h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>curl -i -X GET -H <span class="se">\</span>
-  <span class="s2">&quot;User-Agent: BastionDiscordBot (https://bastionbot.oorg, v6.3)&quot;</span> <span class="se">\</span>
-  https://pokeapi.bastionbot.org/v1/league/kalos
-</pre></div>
-</td></tr></table>
-
-<h3 id="example-response_1">Example Response<a class="headerlink" href="#example-response_1" title="Permanent link">#</a></h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Kalos League&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;kalos&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;region&quot;</span><span class="p">:</span> <span class="s2">&quot;Kalos&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;badgesRequired&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
-  <span class="nt">&quot;badges&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="s2">&quot;Bug Badge&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Cliff Badge&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Rumble Badge&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Plant Badge&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Voltage Badge&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Fairy Badge&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Psychic Badge&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Iceberg Badge&quot;</span>
-  <span class="p">]</span>
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Pokédex API&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;baseURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://pokeapi.bastionbot.org&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;resourcesURL&quot;</span><span class="p">:</span> <span class="s2">&quot;https://pokeres.bastionbot.org&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;versions&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s2">&quot;/v1&quot;</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;author&quot;</span><span class="p">:</span> <span class="s2">&quot;Sankarsan Kampa&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </td></tr></table>
 
-<h2 id="pokemon-league-models">Pokémon League Models<a class="headerlink" href="#pokemon-league-models" title="Permanent link">#</a></h2>
-<h3 id="pokemon-league-object">Pokémon League Object<a class="headerlink" href="#pokemon-league-object" title="Permanent link">#</a></h3>
-<p><table>
-  <caption>Pokémon League Structure</caption>
+<table>
+  <caption>Pokédex API Info Structure</caption>
   <thead>
     <tr class="header">
       <th width="15%">Field</th>
@@ -730,32 +647,91 @@
   </thead>
   <tbody>
     <tr>
-      <td>name</td>
+      <td>title</td>
       <td>string</td>
-      <td>The name of Pokémon league</td>
+      <td>The name the API</td>
     </tr>
     <tr>
-      <td>slug</td>
+      <td>baseURL</td>
       <td>string</td>
-      <td>The string used to identify this region.</td>
+      <td>The base URL of the Pokédex API for requesting resources</td>
     </tr>
     <tr>
-      <td>region</td>
+      <td>resourcesURL</td>
       <td>string</td>
-      <td>The region in the Pokémon World where the league happens</td>
+      <td>The base URL of the image (and other) resources required by the Pokédex API</td>
     </tr>
     <tr>
-      <td>badgesRequired</td>
-      <td>integer</td>
-      <td>The minimum number of Pokémon gym badges required to qualify for the Pokémon league</td>
+      <td>versions</td>
+      <td>array of strings</td>
+      <td>Available versions of the Pokédex API</td>
     </tr>
     <tr>
-      <td>badges</td>
-      <td>array of Pokémon badge names</td>
-      <td>The minimum number of Pokémon gym badges required to qualify for the Pokémon league</td>
+      <td>author</td>
+      <td>string</td>
+      <td>The author/developer of the Pokédex API</td>
     </tr>
   </tbody>
-</table></p>
+</table>
+
+<h2 id="get-pokedex-api-statistics">Get Pokédex API Statistics<a class="headerlink" href="#get-pokedex-api-statistics" title="Permanent link">#</a></h2>
+<p><span class="resource"><span class="get">GET</span> /stats</span></p>
+<p>Returns basic statistics of the Pokédex API containing the total number of
+API calls, number of API calls since last restart and uptime of the API server.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This endpoint doesn&rsquo;t work with versioning. You should access this endpoint
+directly from the base URL.</p>
+</div>
+<h3 id="example-request_1">Example Request<a class="headerlink" href="#example-request_1" title="Permanent link">#</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>curl -i -X GET <span class="se">\</span>
+  -H <span class="s2">&quot;User-Agent: BastionDiscordBot (https://bastionbot.org, v6.3)&quot;</span> <span class="se">\</span>
+  https://pokeapi.bastionbot.org/stats
+</pre></div>
+</td></tr></table>
+
+<h3 id="example-response_1">Example Response<a class="headerlink" href="#example-response_1" title="Permanent link">#</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;total_hits&quot;</span><span class="p">:</span> <span class="s2">&quot;1337&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;session_hits&quot;</span><span class="p">:</span> <span class="s2">&quot;201&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;uptime&quot;</span><span class="p">:</span> <span class="mi">658</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<table>
+  <caption>Pokédex API Stats Structure</caption>
+  <thead>
+    <tr class="header">
+      <th width="15%">Field</th>
+      <th width="30%">Type</th>
+      <th width="55%">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>total_hits</td>
+      <td>string</td>
+      <td>Total number of API calls made to Pokédex API</td>
+    </tr>
+    <tr>
+      <td>session_hits</td>
+      <td>string</td>
+      <td>Number of API calls made to Pokédex API since last restart</td>
+    </tr>
+    <tr>
+      <td>uptime</td>
+      <td>number</td>
+      <td>Number of seconds elapsed since Pokédex API server was booted</td>
+    </tr>
+  </tbody>
+</table>
                 
                   
                 
@@ -774,7 +750,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../evolution-stones/" title="Evolution Stones" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../types/" title="Types" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -783,19 +759,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Evolution Stones
+                Types
               </span>
             </div>
           </a>
         
         
-          <a href="../types/" title="Types" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../about/" title="About" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Types
+                About
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

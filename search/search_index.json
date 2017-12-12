@@ -326,6 +326,46 @@
             "title": "Example Response"
         }, 
         {
+            "location": "/resources/meta/", 
+            "text": "Pok\u00e9dex Meta Resource\n#\n\n\nGet Pok\u00e9dex API Information\n#\n\n\nGET\n /info\n\n\nReturns basic information about the Pok\u00e9dex API containing the base URL,\nresources URL, available versions, etc.\n\n\n\n\nNote\n\n\nThis endpoint doesn\nt work with versioning. You should access this endpoint\ndirectly from the base URL.\n\n\n\n\nExample Request\n#\n\n\n1\n2\n3\ncurl -i -X GET \n\\\n\n  -H \nUser-Agent: BastionDiscordBot (https://bastionbot.org, v6.3)\n \n\\\n\n  https://pokeapi.bastionbot.org/info\n\n\n\n\n\n\nExample Response\n#\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n{\n\n  \ntitle\n:\n \nPok\u00e9dex API\n,\n\n  \nbaseURL\n:\n \nhttps://pokeapi.bastionbot.org\n,\n\n  \nresourcesURL\n:\n \nhttps://pokeres.bastionbot.org\n,\n\n  \nversions\n:\n \n[\n\n    \n/v1\n\n  \n],\n\n  \nauthor\n:\n \nSankarsan Kampa\n\n\n}\n\n\n\n\n\n\n\n\n  \nPok\u00e9dex API Info Structure\n\n  \n\n    \n\n      \nField\n\n      \nType\n\n      \nDescription\n\n    \n\n  \n\n  \n\n    \n\n      \ntitle\n\n      \nstring\n\n      \nThe name the API\n\n    \n\n    \n\n      \nbaseURL\n\n      \nstring\n\n      \nThe base URL of the Pok\u00e9dex API for requesting resources\n\n    \n\n    \n\n      \nresourcesURL\n\n      \nstring\n\n      \nThe base URL of the image (and other) resources required by the Pok\u00e9dex API\n\n    \n\n    \n\n      \nversions\n\n      \narray of strings\n\n      \nAvailable versions of the Pok\u00e9dex API\n\n    \n\n    \n\n      \nauthor\n\n      \nstring\n\n      \nThe author/developer of the Pok\u00e9dex API\n\n    \n\n  \n\n\n\n\n\nGet Pok\u00e9dex API Statistics\n#\n\n\nGET\n /stats\n\n\nReturns basic statistics of the Pok\u00e9dex API containing the total number of\nAPI calls, number of API calls since last restart and uptime of the API server.\n\n\n\n\nNote\n\n\nThis endpoint doesn\nt work with versioning. You should access this endpoint\ndirectly from the base URL.\n\n\n\n\nExample Request\n#\n\n\n1\n2\n3\ncurl -i -X GET \n\\\n\n  -H \nUser-Agent: BastionDiscordBot (https://bastionbot.org, v6.3)\n \n\\\n\n  https://pokeapi.bastionbot.org/stats\n\n\n\n\n\n\nExample Response\n#\n\n\n1\n2\n3\n4\n5\n{\n\n  \ntotal_hits\n:\n \n1337\n,\n\n  \nsession_hits\n:\n \n201\n,\n\n  \nuptime\n:\n \n658\n\n\n}\n\n\n\n\n\n\n\n\n  \nPok\u00e9dex API Stats Structure\n\n  \n\n    \n\n      \nField\n\n      \nType\n\n      \nDescription\n\n    \n\n  \n\n  \n\n    \n\n      \ntotal_hits\n\n      \nstring\n\n      \nTotal number of API calls made to Pok\u00e9dex API\n\n    \n\n    \n\n      \nsession_hits\n\n      \nstring\n\n      \nNumber of API calls made to Pok\u00e9dex API since last restart\n\n    \n\n    \n\n      \nuptime\n\n      \nnumber\n\n      \nNumber of seconds elapsed since Pok\u00e9dex API server was booted", 
+            "title": "Meta"
+        }, 
+        {
+            "location": "/resources/meta/#pokedex-meta-resource", 
+            "text": "", 
+            "title": "Pok\u00e9dex Meta Resource"
+        }, 
+        {
+            "location": "/resources/meta/#get-pokedex-api-information", 
+            "text": "GET  /info  Returns basic information about the Pok\u00e9dex API containing the base URL,\nresources URL, available versions, etc.   Note  This endpoint doesn t work with versioning. You should access this endpoint\ndirectly from the base URL.", 
+            "title": "Get Pok\u00e9dex API Information"
+        }, 
+        {
+            "location": "/resources/meta/#example-request", 
+            "text": "1\n2\n3 curl -i -X GET  \\ \n  -H  User-Agent: BastionDiscordBot (https://bastionbot.org, v6.3)   \\ \n  https://pokeapi.bastionbot.org/info", 
+            "title": "Example Request"
+        }, 
+        {
+            "location": "/resources/meta/#example-response", 
+            "text": "1\n2\n3\n4\n5\n6\n7\n8\n9 { \n   title :   Pok\u00e9dex API , \n   baseURL :   https://pokeapi.bastionbot.org , \n   resourcesURL :   https://pokeres.bastionbot.org , \n   versions :   [ \n     /v1 \n   ], \n   author :   Sankarsan Kampa  }    \n   Pok\u00e9dex API Info Structure \n   \n     \n       Field \n       Type \n       Description \n     \n   \n   \n     \n       title \n       string \n       The name the API \n     \n     \n       baseURL \n       string \n       The base URL of the Pok\u00e9dex API for requesting resources \n     \n     \n       resourcesURL \n       string \n       The base URL of the image (and other) resources required by the Pok\u00e9dex API \n     \n     \n       versions \n       array of strings \n       Available versions of the Pok\u00e9dex API \n     \n     \n       author \n       string \n       The author/developer of the Pok\u00e9dex API", 
+            "title": "Example Response"
+        }, 
+        {
+            "location": "/resources/meta/#get-pokedex-api-statistics", 
+            "text": "GET  /stats  Returns basic statistics of the Pok\u00e9dex API containing the total number of\nAPI calls, number of API calls since last restart and uptime of the API server.   Note  This endpoint doesn t work with versioning. You should access this endpoint\ndirectly from the base URL.", 
+            "title": "Get Pok\u00e9dex API Statistics"
+        }, 
+        {
+            "location": "/resources/meta/#example-request_1", 
+            "text": "1\n2\n3 curl -i -X GET  \\ \n  -H  User-Agent: BastionDiscordBot (https://bastionbot.org, v6.3)   \\ \n  https://pokeapi.bastionbot.org/stats", 
+            "title": "Example Request"
+        }, 
+        {
+            "location": "/resources/meta/#example-response_1", 
+            "text": "1\n2\n3\n4\n5 { \n   total_hits :   1337 , \n   session_hits :   201 , \n   uptime :   658  }    \n   Pok\u00e9dex API Stats Structure \n   \n     \n       Field \n       Type \n       Description \n     \n   \n   \n     \n       total_hits \n       string \n       Total number of API calls made to Pok\u00e9dex API \n     \n     \n       session_hits \n       string \n       Number of API calls made to Pok\u00e9dex API since last restart \n     \n     \n       uptime \n       number \n       Number of seconds elapsed since Pok\u00e9dex API server was booted", 
+            "title": "Example Response"
+        }, 
+        {
             "location": "/about/", 
             "text": "Why did I start this? \nAren\nt there already tons of other APIs?\n#\n\n\nYeah, exactly, there are 100s of other Pok\u00e9mon APIs out there. But they are all\nout dated. That\ns exactly why I started working on this project. I needed a\nPok\u00e9mon API to integrate it with my Discord Bot (\nBastion\n).\nSo I started looking for different sources for a reliable and updated Pok\u00e9mon\nAPI.\n\nI found very reliable and up-to-date sites like \nPok\u00e9mon Database\n\nand \nBulbapedia\n, but they didn\nt had any\npublic facing APIs, that was the first bump. And the sites I found that provided\nan API were not up-to-date. At the time of writing, a complete generation,\ngeneration 7 (Sun \n Moon) to be exact, was missing after months of its release\nin the TV. It was clear that I couldn\nt rely on them for updated Pok\u00e9mon data.\nSo, I thought of writing my own API and keeping it updated as soon as new\nPok\u00e9mon are released.\n\n\nHow did I did this?\n#\n\n\nIt took around a week to manually enter all the Pok\u00e9dex data into a dataset.\nThen I designed \n developed the RESTful API server, tested it and wrote the\ndocumentation. And here we are, with the \nPok\u00e9dex API\n of the \nPok\u00e9mon\nDevelopers\n project.\n\n\nWhat\ns the final product?\n#\n\n\nThe \nPok\u00e9dex API\n is a RESTful API interface to a lot of data about Pok\u00e9mon\nand related stuff that you can consume. We specifically cover the \nPok\u00e9mon anime series\n\nof the \nPok\u00e9mon franchise\n.\nAnd we\nd love to cover the video game and the Pok\u00e9mon Go game in the future.\n\nAnd this website provides you with the documentation on how to use our API so\nthat you can make awesome apps or websites that need Pok\u00e9mon data. You can get\ninformation on all the Pok\u00e9mon that exist in the Pok\u00e9mon World, leagues,\nevolutionary stones and egg groups and a lot more (and a LOT LOT more in the\nfuture).\n\n\nBut wait, who am I?\n#\n\n\nSo, the answer to the final question, I\nm \nSankarsan Kampa\n,\n\na.k.a. k3rn31p4nic\n. You can find me on GitHub \n@k3rn31p4nic\n,\non Twitter \n@k3rn31p4nic\n or on Discord as\n\nk3rn31p4nic#8383\n in any of my Discord Servers, \nBastion\n\nor \nPok\u00e9mon Developers\n.", 
             "title": "About"
