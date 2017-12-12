@@ -73,6 +73,7 @@ pages:
       - Evolution Stones: 'resources/evolution-stones.md'
       - Leagues: 'resources/leagues.md'
       - Types: 'resources/types.md'
+      - Meta: 'resources/meta.md'
   - Information:
     - About: 'about.md'
 
