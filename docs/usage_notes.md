@@ -1,4 +1,4 @@
-title: Usage Notes - Pokédex API - Pokémon Developers
+title: Usage Notes - Pokédex API - Poké Devs
 description: Read the usage notes for implementing and using the Pokédex API.
 
 **Pokédex API** is free to be consumed by everyone. Having said that, we ask

@@ -1,4 +1,4 @@
-title: Intro - Pokédex API - Pokémon Developers
+title: Intro - Pokédex API - Poké Devs
 description: Welcome to the Pokédex API documentation page. Read and get started with developing amazing Pokémon apps.
 
 # Introduction
@@ -15,18 +15,18 @@ and we would :heart: corrections and improvements!
 
 <hr>
 
-Come join our [official Discord server](# 'Pokémon Developers')
+Come join our [official Discord server](# 'Poké Devs')
 if you wanna hang out with other developers and see what they are crafting
 out of the API.
 
 We look forward to see you make awesome apps using our API.
 
-<a href="#" title="Join Pokémon Developers">
+<a href="#" title="Join Poké Devs">
   <div class="discordInvite">
     <div class="di-title">You're not yet invited</div>
     <div class="di-icon"></div>
     <div class="di-content">
-      <div class="di-content__title">Pokémon Developers</div>
+      <div class="di-content__title">Poké Devs</div>
       <div class="di-content__meta">Gotta catch 'em all!</div>
     </div>
     <div class="di-button disabled">Join</div>

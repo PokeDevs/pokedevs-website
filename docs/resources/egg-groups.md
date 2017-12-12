@@ -1,4 +1,4 @@
-title: Resources - Pokédex API - Pokémon Developers
+title: Resources - Pokédex API - Poké Devs
 description: Checkout all the resources of the Pokédex API and start building your application or website.
 
 # Pokémon Egg Groups Resource

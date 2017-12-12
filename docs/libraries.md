@@ -1,4 +1,4 @@
-title: Libraries - Pokédex API - Pokémon Developers
+title: Libraries - Pokédex API - Poké Devs
 description: Use an API wrapper library to save your time and focus on what really matters.
 
 # API Wrapper Libraries

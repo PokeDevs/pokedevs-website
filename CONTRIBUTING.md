@@ -12,4 +12,4 @@
 1.  Additions that replicate or needlessly restructure current documentation.
 
 *By submitting pull requests to this repository, you waive any rights or
-ownership of the included contents to Pokémon Developers.*
+ownership of the included contents to Poké Devs.*

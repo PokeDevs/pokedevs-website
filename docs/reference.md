@@ -1,4 +1,4 @@
-title: Reference - Pokédex API - Pokémon Developers
+title: Reference - Pokédex API - Poké Devs
 description: Welcome to the Pokédex API documentation page. Read and get started with developing amazing Pokémon apps.
 
 ## API Reference

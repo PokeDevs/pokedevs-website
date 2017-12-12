@@ -1,5 +1,5 @@
-title: About - Pokémon Developers
-description: Read about the 'why', 'how' and 'what' of the Pokémon Developers project.
+title: About - Poké Devs
+description: Read about the 'why', 'how' and 'what' of the Poké Devs project.
 
 ## Why did I start this? <small>Aren't there already tons of other APIs?</small>
 Yeah, exactly, there are 100s of other Pokémon APIs out there. But they are all
@@ -19,8 +19,7 @@ Pokémon are released.
 ## How did I did this?
 It took around a week to manually enter all the Pokédex data into a dataset.
 Then I designed & developed the RESTful API server, tested it and wrote the
-documentation. And here we are, with the **Pokédex API** of the **Pokémon
-Developers** project.
+documentation. And here we are, with the **Pokédex API**.
 
 ## What's the final product?
 The **Pokédex API** is a RESTful API interface to a lot of data about Pokémon
@@ -38,4 +37,4 @@ So, the answer to the final question, I'm [Sankarsan Kampa](https://sankarsankam
 *a.k.a. k3rn31p4nic*. You can find me on GitHub [@k3rn31p4nic](https://github.com/k3rn31p4nic),
 on Twitter [@k3rn31p4nic](https://twitter.com/k3rn31p4nic) or on Discord as
 **k3rn31p4nic#8383** in any of my Discord Servers, [Bastion](https://discord.gg/fzx8fkt)
-or [Pokémon Developers]().
+or [Poké Devs]().
