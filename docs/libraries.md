@@ -20,5 +20,8 @@ around the world that you can use for your project.
     If you are a developer and have made any wrapper library that can be used by
     anyone to power their application or website, we'd love to showcase your
     library here.  
-    ***More details on how to do that, what perks you will receive and etc. will
-    be available when this website is released.***
+    Contact us in our [official Discord server](https://discord.gg/7P4H3TY) to
+    get your library verified. Once it gets verified you'll get a super
+    cool **Library Dev** role and a special channel for your library in our
+    Discord Server which you can use to provide support to your library users
+    and attract more users to use your library.
