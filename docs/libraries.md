@@ -8,7 +8,10 @@ time and focus on what really matters - your application or website.
 ## Official Libraries
 Here's a list of nifty libraries made by us that you can use for your project.
 
-> No official libraries are available yet. Check back soon.
+### JavaScript
+*   node-pokedex-api https://github.com/PokeDevs/node-pokedex-api
+
+> More official libraries will be coming soon.
 
 ## Third-Party Libraries
 Here's a list of amazing libraries made by us made by brilliant developers
