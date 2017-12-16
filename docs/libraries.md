@@ -11,6 +11,9 @@ Here's a list of nifty libraries made by us that you can use for your project.
 ### JavaScript
 *   node-pokedex-api https://github.com/PokeDevs/node-pokedex-api
 
+### Python
+*   pokedex.py https://github.com/PokeDevs/pokedex.py
+
 > More official libraries will be coming soon.
 
 ## Third-Party Libraries
