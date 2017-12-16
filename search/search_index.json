@@ -72,7 +72,7 @@
         }, 
         {
             "location": "/libraries/", 
-            "text": "API Wrapper Libraries\n#\n\n\nUse any available API wrapper library for your programming language to save your\ntime and focus on what really matters - your application or website.\n\n\nOfficial Libraries\n#\n\n\nHere\ns a list of nifty libraries made by us that you can use for your project.\n\n\nJavaScript\n#\n\n\n\n\nnode-pokedex-api \nhttps://github.com/PokeDevs/node-pokedex-api\n\n\n\n\n\n\nMore official libraries will be coming soon.\n\n\n\n\nThird-Party Libraries\n#\n\n\nHere\ns a list of amazing libraries made by us made by brilliant developers\naround the world that you can use for your project.\n\n\n\n\nNo third-party libraries are available yet. Check back soon.  \n\n\n\n\n\n\nInfo\n\n\nIf you are a developer and have made any wrapper library that can be used by\nanyone to power their application or website, we\nd love to showcase your\nlibrary here.\n\nContact us in our \nofficial Discord server\n to\nget your library verified. Once it gets verified you\nll get a super\ncool \nLibrary Dev\n role and a special channel for your library in our\nDiscord Server which you can use to provide support to your library users\nand attract more users to use your library.", 
+            "text": "API Wrapper Libraries\n#\n\n\nUse any available API wrapper library for your programming language to save your\ntime and focus on what really matters - your application or website.\n\n\nOfficial Libraries\n#\n\n\nHere\ns a list of nifty libraries made by us that you can use for your project.\n\n\nJavaScript\n#\n\n\n\n\nnode-pokedex-api \nhttps://github.com/PokeDevs/node-pokedex-api\n\n\n\n\nPython\n#\n\n\n\n\npokedex.py \nhttps://github.com/PokeDevs/pokedex.py\n\n\n\n\n\n\nMore official libraries will be coming soon.\n\n\n\n\nThird-Party Libraries\n#\n\n\nHere\ns a list of amazing libraries made by us made by brilliant developers\naround the world that you can use for your project.\n\n\n\n\nNo third-party libraries are available yet. Check back soon.  \n\n\n\n\n\n\nInfo\n\n\nIf you are a developer and have made any wrapper library that can be used by\nanyone to power their application or website, we\nd love to showcase your\nlibrary here.\n\nContact us in our \nofficial Discord server\n to\nget your library verified. Once it gets verified you\nll get a super\ncool \nLibrary Dev\n role and a special channel for your library in our\nDiscord Server which you can use to provide support to your library users\nand attract more users to use your library.", 
             "title": "Libraries"
         }, 
         {
@@ -87,8 +87,13 @@
         }, 
         {
             "location": "/libraries/#javascript", 
-            "text": "node-pokedex-api  https://github.com/PokeDevs/node-pokedex-api    More official libraries will be coming soon.", 
+            "text": "node-pokedex-api  https://github.com/PokeDevs/node-pokedex-api", 
             "title": "JavaScript"
+        }, 
+        {
+            "location": "/libraries/#python", 
+            "text": "pokedex.py  https://github.com/PokeDevs/pokedex.py    More official libraries will be coming soon.", 
+            "title": "Python"
         }, 
         {
             "location": "/libraries/#third-party-libraries", 
