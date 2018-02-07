@@ -3,6 +3,67 @@ description: Checkout all the resources of the Pokédex API and start building y
 
 # Pokémon Resource
 
+## Get Pokémon <small>by name</small>
+<span class="resource"><span class="get">GET</span> /pokemon/<a href="#pokemon-object">{name}</a></span>
+
+Returns an array of <a href="#pokemon-object">Pokémon</a> objects containing all
+the forms of the Pokémon specified the Pokémon name.
+
+### Example Request
+```bash
+curl -i -X GET \
+  -H "User-Agent: BastionDiscordBot (https://bastionbot.org, v6.3)" \
+  https://pokeapi.bastionbot.org/v1/pokemon/pikachu
+```
+
+### Example Response
+```json
+[
+  {
+    "number": "25",
+    "name": "Pikachu",
+    "species": "Mouse",
+    "types": [
+      "Electric"
+    ],
+    "abilities": {
+      "normal": [
+        "Static"
+      ],
+      "hidden": [
+        "Lightning Rod"
+      ]
+    },
+    "eggGroups": [
+      "Field",
+      "Fairy"
+    ],
+    "gender": [
+      50,
+      50
+    ],
+    "height": "1'04\"",
+    "weight": "13.2 lbs.",
+    "family": {
+      "id": 10,
+      "evolutionStage": 2,
+      "evolutionLine": [
+        "Pichu",
+        "Pikachu",
+        "Raichu"
+      ]
+    },
+    "starter": false,
+    "legendary": false,
+    "mythical": false,
+    "ultraBeast": false,
+    "mega": false,
+    "gen": 1,
+    "sprite": "https://pokeres.bastionbot.org/images/pokemon/25.png"
+  }
+]
+```
+
 ## Get Pokémon <small>by Pokédex number</small>
 <span class="resource"><span class="get">GET</span> /pokemon/<a href="#pokemon-object">{number}</a></span>
 
