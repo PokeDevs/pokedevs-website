@@ -110,7 +110,7 @@ curl -i -X GET \
     <tr>
       <td>total_hits</td>
       <td>string</td>
-      <td>Total number of API calls made to Pokédex API</td>
+      <td>Total number of API calls made to Pokédex API. *Note that this is not accurate because currently the API is hosted in Heroku, which restarts frequently. I'll host the API in a dedicated server if I get enough resources to do so. So, if you like this project, please consider donating via [PayPal](https://paypal.me/snkrsnkampa).*</td>
     </tr>
     <tr>
       <td>session_hits</td>
